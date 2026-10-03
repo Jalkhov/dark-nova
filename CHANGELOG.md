@@ -1,5 +1,15 @@
 # Changelog
 
+### 3.1.0
+- add Lucide icons to the browser menus, being now fully iconized
+- iconize the File, Edit, View, History, Bookmarks, Tools and Help menus
+- iconize the page, tab and places context menus
+- iconize submenus such as Toolbars, Sidebar, Zoom, Developer Tools, Recently
+  Closed Tabs and Recently Closed Windows
+- refresh the standalone toolbar icons (back, forward, reload, stop, home,
+  downloads, history, bookmarks, new tab/window, print, cut, copy, paste,
+  fullscreen, zoom, sync, quit, open and media) with Lucide geometry
+
 ### 3.0.0
 First release of Dark Nova, a fork of Dark Moon focused on a modern interface.
 
