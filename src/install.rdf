@@ -9,7 +9,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>dark-nova@jalkhov</em:id>
-    <em:version>3.0.0</em:version>
+    <em:version>3.1.0</em:version>
     <em:name>Dark Nova</em:name>
     <em:description>A modern dark theme for Pale Moon, inspired by the Mozilla Firefox Nova redesign.</em:description>
     <em:creator>Jalkhov &lt;ing.torcattsoto.2020@gmail.com&gt;</em:creator>
