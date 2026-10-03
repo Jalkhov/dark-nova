@@ -1,1 +1,56 @@
 @import url("chrome://os/skin/global/scrollbars.css");
+
+/* ============================================================================
+   NOVA — Scrollbars (compartido: Linux, Windows y macOS)
+   ----------------------------------------------------------------------------
+   Reemplaza la apariencia nativa (que sigue el tema GTK) por un scrollbar
+   fino con thumb redondeado y sin botones.
+   ========================================================================== */
+
+scrollbar {
+  -moz-appearance: none !important;
+  border: none !important;
+  background: transparent !important;
+  background-image: none !important;
+}
+
+scrollbar[orient="vertical"] {
+  min-width: 12px;
+}
+
+scrollbar[orient="horizontal"] {
+  min-height: 12px;
+}
+
+slider {
+  -moz-appearance: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+thumb {
+  -moz-appearance: none !important;
+  background-color: rgba(255, 255, 255, .26) !important;
+  border: none !important;
+  border-radius: 999px !important;
+  min-width: 28px;
+  min-height: 28px;
+}
+
+thumb:hover {
+  background-color: rgba(255, 255, 255, .38) !important;
+}
+
+thumb:active {
+  background-color: rgba(255, 255, 255, .5) !important;
+}
+
+scrollbarbutton {
+  -moz-appearance: none !important;
+  display: none !important;
+}
+
+scrollcorner {
+  background-color: transparent !important;
+  border: none !important;
+}
