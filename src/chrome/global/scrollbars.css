@@ -15,11 +15,11 @@ scrollbar {
 }
 
 scrollbar[orient="vertical"] {
-  min-width: 12px;
+  min-width: 11px;
 }
 
 scrollbar[orient="horizontal"] {
-  min-height: 12px;
+  min-height: 11px;
 }
 
 slider {
@@ -33,8 +33,14 @@ thumb {
   background-color: rgba(255, 255, 255, .26) !important;
   border: none !important;
   border-radius: 999px !important;
-  min-width: 28px;
-  min-height: 28px;
+  /* largo del thumb en scrollbars verticales */
+  min-height: 26px;
+}
+
+thumb[orient="horizontal"] {
+  /* en horizontal el alto lo manda el propio scrollbar */
+  min-height: 0 !important;
+  min-width: 26px;
 }
 
 thumb:hover {
