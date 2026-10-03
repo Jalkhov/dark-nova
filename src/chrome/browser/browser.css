@@ -2667,7 +2667,9 @@ toolbar[mode="text"] #addonbar-closebutton > .toolbarbutton-icon {
   border: 1px solid transparent !important;
   border-radius: 10px !important;
   color: var(--nova-text) !important;
-  min-height: 32px;
+  box-sizing: border-box;
+  height: 34px;
+  min-height: 34px;
   padding: 2px 5px !important;
   margin: 1px 4px !important;
   transition: background-color var(--nova-transition),
@@ -2694,7 +2696,8 @@ toolbar[mode="text"] #addonbar-closebutton > .toolbarbutton-icon {
 }
 
 #identity-box {
-  padding: 4px 4px;
+  padding: 0 4px;
+  margin: 0;
   border-radius: var(--nova-radius-sm);
 }
 
