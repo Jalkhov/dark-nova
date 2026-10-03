@@ -45,7 +45,7 @@
 .searchbar-dropmarker-image {
   list-style-image: url("chrome://browser/skin/toolbarbutton-dropdown-arrow.svg");
   opacity: 0.75;
-  margin-inline-start: 4px;
+  margin-inline-start: 6px;
 }
 
 .searchbar-engine-button:hover > .searchbar-dropmarker-image,

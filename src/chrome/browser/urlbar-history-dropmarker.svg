@@ -1,11 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     x="0"
-     y="0"
-     width="11"
-     height="14"
-     viewBox="0 0 11 14">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10" height="8" version="1.1" viewBox="0 0 10 8"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
   <style>
     use:not(:target) {
       display: none;
@@ -13,7 +9,7 @@
     use {
       fill: none;
       stroke: #fff;
-      stroke-width: 1.5;
+      stroke-width: 1.6;
       stroke-linecap: round;
       stroke-linejoin: round;
     }
@@ -22,7 +18,7 @@
     }
   </style>
   <defs style="display: none;">
-    <path id="drop-shape" d="M2.5 5.5 5.5 8.5 8.5 5.5"/>
+    <path id="drop-shape" d="M2 2.75 5 5.75 8 2.75"/>
   </defs>
   <use id="closed" xlink:href="#drop-shape"/>
   <use id="open"   xlink:href="#drop-shape"/>

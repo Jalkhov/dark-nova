@@ -221,8 +221,8 @@
 }
 
 #placesMenu > menu > .menubar-text {
-  padding-inline-end: 18px;
-  background-position: right 4px center;
+  padding-inline-end: 24px;
+  background-position: right 6px center;
 }
 
 #placesToolbar > toolbarbutton {
