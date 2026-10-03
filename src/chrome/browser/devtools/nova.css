@@ -18,6 +18,12 @@
   --toolbar-button-border-color: rgba(255, 255, 255, .08);
 }
 
+/* Hardcodes del tema claro que no encajan con nuestra paleta oscura */
+.theme-light .jsterm-input-container {
+  background-color: #26262d;
+  border-top-color: #33333c;
+}
+
 /* ::::: cajas de texto ::::: */
 
 .devtools-textinput,
