@@ -164,6 +164,15 @@ button,
   padding: 0 3px !important;
 }
 
+/* La cabecera de la tabla de Network son botones planos, sin radio */
+.requests-menu-header-button {
+  border-radius: 0 !important;
+}
+
+.requests-menu-header-button > .button-box {
+  padding: 0 !important;
+}
+
 /* ::::: tooltips ::::: */
 
 .devtools-tooltip,

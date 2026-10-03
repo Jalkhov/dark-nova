@@ -152,9 +152,12 @@ button[type="disclosure"][open="true"] {
 
 /* ============================================================================
    NOVA — Botones (diálogos y ventanas)
+   ----------------------------------------------------------------------------
+   Especificidad baja a propósito, para que los componentes que definen sus
+   propios botones (por ejemplo DevTools) puedan sobrescribirlos.
    ========================================================================== */
 
-button:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
+button {
   -moz-border-top-colors: none !important;
   -moz-border-right-colors: none !important;
   -moz-border-bottom-colors: none !important;
@@ -164,7 +167,6 @@ button:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
   box-sizing: border-box;
   background-color: var(--nova-surface-3);
   color: var(--nova-text);
-  height: 32px;
   min-height: 32px;
   padding: 0 12px;
   transition: background-color var(--nova-transition),
@@ -172,31 +174,48 @@ button:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
               box-shadow var(--nova-transition);
 }
 
-button:not([type="menu-button"]):not([type="disclosure"]):not(.plain):hover:not(:active):not([disabled="true"]) {
+button:hover:not(:active):not([disabled="true"]) {
   background-color: var(--nova-surface-4);
   border-color: var(--nova-border-strong);
 }
 
-button:not([type="menu-button"]):not([type="disclosure"]):not(.plain):hover:active,
-button:not([type="menu-button"]):not([type="disclosure"]):not(.plain)[open="true"],
-button:not([type="menu-button"]):not([type="disclosure"]):not(.plain)[checked="true"] {
+button:hover:active,
+button[open="true"],
+button[checked="true"] {
   background-color: var(--nova-active);
   border-color: var(--nova-border-strong);
 }
 
-button:not([type="menu-button"]):not([type="disclosure"]):not(.plain):focus {
+button:focus {
   border-color: var(--nova-accent);
   box-shadow: 0 0 0 2px var(--nova-focus);
 }
 
-button[default="true"]:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
+button[default="true"] {
   border-color: var(--nova-accent);
 }
 
-button[disabled="true"]:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
+button[disabled="true"] {
+  -moz-border-top-colors: none !important;
+  -moz-border-right-colors: none !important;
+  -moz-border-bottom-colors: none !important;
+  -moz-border-left-colors: none !important;
   background-color: var(--nova-surface);
   color: GrayText;
   opacity: .6;
+}
+
+/* Botones que no llevan el estilo de diálogo */
+button[type="menu-button"],
+button[type="disclosure"],
+button.plain {
+  min-height: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: content-box;
 }
 
 .button-box {
