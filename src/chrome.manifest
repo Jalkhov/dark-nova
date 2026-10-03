@@ -21,6 +21,10 @@ override chrome://devtools/skin/images/debugging-tabs.svg chrome://global/skin/d
 override chrome://devtools/skin/images/debugging-workers.svg chrome://global/skin/devtools/debugging-workers.svg
 override chrome://devtools/skin/images/debugging-workers-generic.svg chrome://global/skin/devtools/workers-generic.svg
 
+override chrome://devtools/skin/light-theme.css chrome://browser/skin/devtools/light-theme.css
+override chrome://devtools/skin/dark-theme.css chrome://browser/skin/devtools/dark-theme.css
+
+
 override chrome://mozapps/skin/extensions/extensionGeneric-16.png chrome://mozapps/skin/extensions/extensionGeneric-16.svg
 override chrome://mozapps/skin/passwordmgr/key.png chrome://mozapps/skin/passwordmgr/key.svg
 override chrome://mozapps/skin/places/defaultFavicon.png chrome://mozapps/skin/places/defaultFavicon.svg

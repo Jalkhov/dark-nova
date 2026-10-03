@@ -1,0 +1,87 @@
+/* ============================================================================
+   NOVA — Variables de Developer Tools
+   ----------------------------------------------------------------------------
+   El toolbox carga chrome://global/skin/, así que desde aquí sobreescribimos
+   las variables de chrome://devtools/skin/variables.css (que se importa desde
+   resource://) usando !important para ganar en la cascada.
+   ========================================================================== */
+
+:root.theme-light,
+:root.theme-dark,
+:root.theme-firebug {
+  --theme-body-background: var(--nova-surface) !important;
+  --theme-sidebar-background: var(--nova-surface) !important;
+  --theme-contrast-background: var(--nova-accent-strong) !important;
+
+  --theme-tab-toolbar-background: var(--nova-window) !important;
+  --theme-toolbar-background: var(--nova-surface-2) !important;
+  --theme-selection-background: #6f5fd8 !important;
+  --theme-selection-background-semitransparent: rgba(157, 140, 255, .30) !important;
+  --theme-selection-color: #ffffff !important;
+  --theme-splitter-color: var(--nova-surface-4) !important;
+  --theme-comment: #7d7d8a !important;
+
+  --theme-body-color: #b9b9c6 !important;
+  --theme-body-color-alt: #cfcfda !important;
+  --theme-body-color-inactive: #8a8a97 !important;
+  --theme-content-color1: var(--nova-text) !important;
+  --theme-content-color2: #b9b9c6 !important;
+  --theme-content-color3: #8a8a97 !important;
+
+  --theme-highlight-green: #8fe0a8 !important;
+  --theme-highlight-blue: #9db4ff !important;
+  --theme-highlight-bluegrey: #7c86a8 !important;
+  --theme-highlight-purple: var(--nova-accent-strong) !important;
+  --theme-highlight-lightorange: #e0a25e !important;
+  --theme-highlight-orange: #e07a4a !important;
+  --theme-highlight-red: #ff7a90 !important;
+  --theme-highlight-pink: #e0a0ff !important;
+  --theme-highlight-gray: #cfcfda !important;
+
+  --theme-focus-outline-color: var(--nova-accent-strong) !important;
+
+  --theme-graphs-green: #8fe0a8 !important;
+  --theme-graphs-blue: #9db4ff !important;
+  --theme-graphs-bluegrey: #7c86a8 !important;
+  --theme-graphs-purple: var(--nova-accent-strong) !important;
+  --theme-graphs-yellow: #e0c164 !important;
+  --theme-graphs-orange: #e0a25e !important;
+  --theme-graphs-red: #ff7a90 !important;
+  --theme-graphs-grey: #6b6b78 !important;
+
+  --theme-tooltip-border: var(--nova-surface-4) !important;
+  --theme-tooltip-background: rgba(49, 49, 58, .96) !important;
+  --theme-tooltip-shadow: rgba(0, 0, 0, .5) !important;
+
+  --theme-focus-border-color-textbox: var(--nova-accent) !important;
+  --theme-textbox-box-shadow: var(--nova-focus) !important;
+}
+
+/* ::::: retoques de forma ::::: */
+
+.theme-body,
+.theme-sidebar {
+  --theme-toolbar-border: var(--nova-border);
+}
+
+.devtools-tabbar {
+  min-height: 30px !important;
+  padding: 3px 6px !important;
+  border-bottom: 1px solid var(--nova-border) !important;
+}
+
+.devtools-tab {
+  border-inline-start-width: 0 !important;
+  border-radius: var(--nova-radius-sm) !important;
+  margin: 0 2px !important;
+  min-height: 22px !important;
+  padding: 0 6px !important;
+}
+
+.devtools-tabbar .devtools-tab[selected],
+.devtools-tabbar .devtools-tab[selected]:hover:active {
+  background-color: #6f5fd8 !important;
+  color: #ffffff !important;
+  border-radius: var(--nova-radius-sm) !important;
+}
+
