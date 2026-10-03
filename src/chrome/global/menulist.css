@@ -7,19 +7,19 @@
 menulist {
   border: 1px solid var(--nova-border);
   border-radius: var(--nova-radius-sm);
-  background-color: var(--nova-surface-2);
+  background-color: var(--nova-surface-3);
   margin: 3px 6px;
   min-height: 30px;
   transition: background-color var(--nova-transition), border-color var(--nova-transition);
 }
 
 menulist:hover {
-  background-color: var(--nova-surface-3);
+  background-color: var(--nova-surface-4);
 }
 
 menulist:hover:active,
 menulist[open="true"] {
-  background-color: var(--nova-surface-3);
+  background-color: var(--nova-surface-4);
   border-color: var(--nova-border-strong);
 }
 

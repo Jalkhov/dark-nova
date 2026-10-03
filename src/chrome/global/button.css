@@ -161,7 +161,7 @@ button:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
   -moz-border-left-colors: none !important;
   border: 1px solid var(--nova-border);
   border-radius: var(--nova-radius-sm);
-  background-color: var(--nova-surface-2);
+  background-color: var(--nova-surface-3);
   color: var(--nova-text);
   padding: 5px 12px;
   min-height: 30px;
@@ -171,7 +171,7 @@ button:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
 }
 
 button:not([type="menu-button"]):not([type="disclosure"]):not(.plain):hover:not(:active):not([disabled="true"]) {
-  background-color: var(--nova-surface-3);
+  background-color: var(--nova-surface-4);
   border-color: var(--nova-border-strong);
 }
 
