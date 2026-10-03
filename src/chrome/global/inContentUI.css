@@ -48,8 +48,8 @@
   -moz-appearance: none;
   padding: 18px;
   background-repeat: repeat;
-  color: #fff;
-  background-color: rgb(43,43,43);
+  color: var(--nova-text, #fbfbfe);
+  background-color: var(--nova-window, #16161a);
 }
 
 html|html {
@@ -68,10 +68,10 @@ html|html {
   /* Disabled because of bug 623615
   overflow: hidden;
   */
-  background-color: rgb(43,43,43);
-  border: 1px solid rgb(75,75,75);
-  color: #fff;
-  border-radius: 5px;
+  background-color: var(--nova-surface, #1e1e23);
+  border: 1px solid var(--nova-border, rgba(255,255,255,.08));
+  color: var(--nova-text, #fbfbfe);
+  border-radius: var(--nova-radius-lg, 12px);
 }
 
   /* Buttons */
