@@ -1,5 +1,16 @@
 # Changelog
 
+### 3.0.0
+First release of Dark Nova, a fork of Dark Moon focused on a modern interface.
+
+- rebrand the theme as Dark Nova
+- modernize the interface with a "Nova"-inspired design language
+- add design tokens for radii, surfaces, accent colour, shadows and motion
+- rounded surfaces, cooler dark palette and softer interaction states
+- more breathing room across tabs, toolbars, address bar, bookmarks and menus
+- replace the toolbar/chrome icon set with Lucide line icons
+- restyle menus, popups, tooltips, autocomplete, find bar and new tab page
+
 ### 2.8.1
 - support Pale Moon 35
 
