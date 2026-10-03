@@ -9,6 +9,7 @@ menulist {
   border-radius: var(--nova-radius-sm);
   background-color: var(--nova-surface-2);
   margin: 3px 6px;
+  min-height: 30px;
   transition: background-color var(--nova-transition), border-color var(--nova-transition);
 }
 
