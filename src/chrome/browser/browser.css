@@ -2500,3 +2500,306 @@ toolbar[mode="text"] #addonbar-closebutton > .toolbarbutton-icon {
 #main-window[treestyletab-mode=vertical]:not([treestyletab-style]) .treestyletab-tabbar-placeholder {
   background: rgb(43,43,43) !important;
 }
+
+/* ============================================================================
+   NOVA — Chrome del navegador
+   ----------------------------------------------------------------------------
+   Overrides al final del archivo para ganar en cascada sobre White Moon.
+   ========================================================================== */
+
+/* ----- Marco y barras superiores ----- */
+
+#main-window {
+  background-color: var(--nova-window) !important;
+}
+
+#navigator-toolbox > toolbar:not(:-moz-lwtheme),
+#navigator-toolbox[tabsontop="true"] > #nav-bar:not(:-moz-lwtheme),
+#navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] + toolbar:not(:-moz-lwtheme),
+#navigator-toolbox[tabsontop="true"]:not([customizing]) > #nav-bar[collapsed="true"] + #customToolbars + #PersonalToolbar:not(:-moz-lwtheme) {
+  background-color: var(--nova-surface) !important;
+  background-image: none !important;
+}
+
+#navigator-toolbox {
+  background-color: var(--nova-surface) !important;
+}
+
+#navigator-toolbox::after {
+  height: 1px;
+  background-color: var(--nova-border) !important;
+}
+
+#PersonalToolbar:not([collapsed="true"]) {
+  border-top: 1px solid var(--nova-border);
+}
+
+/* ----- Pestañas ----- */
+
+#TabsToolbar {
+  min-height: 42px;
+  padding: 0 6px;
+  background-color: var(--nova-surface) !important;
+  background-image: none !important;
+}
+
+.tabbrowser-tab,
+.tabs-newtab-button {
+  -moz-appearance: none !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 9px 9px 0 0 !important;
+  margin: 4px 2px 0 !important;
+  padding: 5px 7px 5px 5px !important;
+  min-height: 34px;
+  box-shadow: none !important;
+  transition: background-color var(--nova-transition) !important;
+}
+
+.tabbrowser-tab:hover,
+.tabs-newtab-button:hover {
+  background: var(--nova-hover) !important;
+}
+
+.tabbrowser-tab[selected="true"] {
+  background: var(--nova-surface-3) !important;
+}
+
+.tabbrowser-tab[pinned][titlechanged]:not([selected="true"]) {
+  background: var(--nova-hover) !important;
+}
+
+#main-window[sizemode="normal"][tabsontop=true] .tabbrowser-tab,
+#main-window[sizemode="normal"][tabsontop=true] .tabs-newtab-button {
+  margin-top: 6px !important;
+}
+
+.tabbrowser-tab:not([selected=true]):not(:hover):not(:-moz-lwtheme) > * > * > .tab-text {
+  opacity: .55;
+}
+
+.tab-icon-image,
+.tab-throbber {
+  margin-inline-start: 3px;
+  margin-inline-end: 7px;
+}
+
+/* Botón de cerrar pestaña */
+.tab-close-button {
+  border-radius: var(--nova-radius-pill);
+  padding: 3px;
+  transition: background-color var(--nova-transition);
+}
+
+.tab-close-button:hover,
+.tab-close-button:hover:active {
+  background-color: var(--nova-active);
+}
+
+/* Botones de nueva pestaña / lista de pestañas / scroll de pestañas */
+.tabs-newtab-button,
+#TabsToolbar > #new-tab-button,
+#TabsToolbar > toolbarpaletteitem > #new-tab-button {
+  border-radius: var(--nova-radius-sm) !important;
+  margin-top: 6px !important;
+  width: 32px;
+}
+
+#alltabs-button {
+  border-radius: var(--nova-radius-sm) !important;
+}
+
+#main-window[sizemode="normal"][tabsontop=true] #alltabs-button {
+  margin-top: 6px !important;
+}
+
+.tabbrowser-arrowscrollbox > .scrollbutton-up,
+.tabbrowser-arrowscrollbox > .scrollbutton-down {
+  border-radius: var(--nova-radius-sm);
+}
+
+/* ----- Barra de navegación ----- */
+
+#nav-bar {
+  min-height: 46px;
+  padding: 4px 8px;
+  border-top: none !important;
+  background-color: var(--nova-surface) !important;
+  background-image: none !important;
+}
+
+/* Botones de la barra de navegación */
+#nav-bar .toolbarbutton-1 > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-badge-stack,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-badge-container,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1 > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon {
+  border: none !important;
+  border-radius: var(--nova-radius-sm) !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  padding: 5px 7px !important;
+  transition: background-color var(--nova-transition) !important;
+}
+
+#nav-bar .toolbarbutton-1:not([disabled]):hover > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1:not([disabled]):hover > .toolbarbutton-badge-stack,
+#nav-bar .toolbarbutton-1:not([disabled]):hover > .toolbarbutton-badge-container,
+#nav-bar .toolbarbutton-1:not([disabled]):hover > .toolbarbutton-menubutton-button > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1:not([disabled]):hover > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon {
+  background-color: var(--nova-hover) !important;
+}
+
+#nav-bar .toolbarbutton-1:not([disabled]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-icon,
+#nav-bar .toolbarbutton-1:not([disabled]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-badge-stack,
+#nav-bar .toolbarbutton-1:not([disabled]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-badge-container,
+#nav-bar .toolbarbutton-1:not([disabled]):-moz-any([open], [checked], :hover:active) > .toolbarbutton-menubutton-button > .toolbarbutton-icon {
+  background-color: var(--nova-active) !important;
+}
+
+/* ----- Barra de direcciones y búsqueda ----- */
+
+#urlbar,
+.searchbar-textbox {
+  -moz-appearance: none !important;
+  background: var(--nova-surface-2) !important;
+  border: 1px solid transparent !important;
+  border-radius: 10px !important;
+  color: var(--nova-text) !important;
+  min-height: 32px;
+  padding: 2px 5px !important;
+  margin: 1px 4px !important;
+  transition: background-color var(--nova-transition),
+              border-color var(--nova-transition),
+              box-shadow var(--nova-transition);
+}
+
+#urlbar:hover,
+.searchbar-textbox:hover {
+  background: var(--nova-surface-3) !important;
+}
+
+#urlbar[focused="true"],
+.searchbar-textbox[focused="true"] {
+  background: var(--nova-window) !important;
+  border-color: var(--nova-accent) !important;
+  box-shadow: 0 0 0 2px var(--nova-focus) !important;
+}
+
+#urlbar:-moz-lwtheme,
+.searchbar-textbox:-moz-lwtheme {
+  background-color: var(--nova-surface-2) !important;
+  border-color: transparent !important;
+}
+
+#identity-box {
+  padding: 4px 4px;
+  border-radius: var(--nova-radius-sm);
+}
+
+.urlbar-history-dropmarker {
+  border-radius: var(--nova-radius-xs);
+}
+
+#urlbar-reload-button,
+#urlbar-stop-button,
+#urlbar-go-button,
+#go-button,
+#urlbar > toolbarbutton {
+  border-radius: var(--nova-radius-sm);
+  transition: background-color var(--nova-transition);
+}
+
+#urlbar-reload-button:not([disabled]):hover,
+#urlbar-stop-button:not([disabled]):hover,
+#urlbar-go-button:not([disabled]):hover,
+#go-button:not([disabled]):hover {
+  background-color: var(--nova-hover) !important;
+}
+
+/* ----- Barra de marcadores ----- */
+
+#PersonalToolbar {
+  min-height: 34px;
+  padding: 3px 8px;
+}
+
+toolbarbutton.bookmark-item {
+  border-radius: var(--nova-radius-sm) !important;
+  border: none !important;
+  padding: 4px 7px !important;
+  margin: 0 !important;
+  transition: background-color var(--nova-transition), color var(--nova-transition);
+}
+
+toolbarbutton.bookmark-item:hover {
+  background-color: var(--nova-hover) !important;
+  color: var(--nova-text) !important;
+  text-shadow: none !important;
+}
+
+toolbarbutton.bookmark-item:hover:active,
+toolbarbutton.bookmark-item[open="true"] {
+  background-color: var(--nova-active) !important;
+  padding: 4px 7px !important;
+}
+
+/* ----- Barra de búsqueda rápida (findbar) y addon bar ----- */
+
+#FindToolbar {
+  background-color: var(--nova-surface) !important;
+  border-top: 1px solid var(--nova-border) !important;
+  padding: 4px 6px;
+}
+
+#addon-bar {
+  background-color: var(--nova-surface) !important;
+  border-top: 1px solid var(--nova-border) !important;
+}
+
+/* ----- Barra de estado del navegador ----- */
+
+#status-bar {
+  background-color: var(--nova-surface) !important;
+}
+
+#status-bar > statusbarpanel {
+  border-width: 0;
+}
+
+.statuspanel-label {
+  background: var(--nova-surface-2) !important;
+  border: 1px solid var(--nova-border) !important;
+  border-radius: var(--nova-radius-sm);
+  color: var(--nova-text) !important;
+  padding: 3px 8px;
+  box-shadow: var(--nova-shadow-sm);
+}
+
+/* ----- Badges de botones ----- */
+
+.toolbarbutton-badge {
+  background-color: var(--nova-accent) !important;
+  border-radius: var(--nova-radius-pill) !important;
+  box-shadow: none !important;
+  color: #16121f !important;
+  font-weight: 600;
+}
+
+/* ----- Paneles de la interfaz (KUI / ctrl-tab) ----- */
+
+.KUI-panel {
+  background: var(--nova-surface-2) !important;
+  border-radius: var(--nova-radius-xl) !important;
+  box-shadow: var(--nova-shadow-lg);
+}
+
+#allTabs-panel,
+#ctrlTab-panel {
+  background: var(--nova-surface-2) !important;
+}
+
+.ctrlTab-preview:focus > * > .ctrlTab-preview-inner,
+#ctrlTab-showAll:not(:focus) > * > .ctrlTab-preview-inner {
+  border-radius: var(--nova-radius-lg);
+}
