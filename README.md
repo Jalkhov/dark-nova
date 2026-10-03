@@ -11,6 +11,14 @@ Forked from [Dark Moon](https://github.com/Lootyhoof/darkmoon), which is based o
 - [Lucide](https://lucide.dev/) line icons across the toolbar and browser chrome.
 - Restyled tabs, address bar, bookmarks, menus, popups, autocomplete and find bar.
 
+## TODO / known issues
+
+These areas are not fully styled yet and are tracked here for future work:
+
+- **Page Info window** — the *Page Info* dialog (General, Media, Security and Headers tabs) still uses the inherited White Moon styling and icons.
+- **Developer Tools (F12)** — the menu entries are iconized, but the DevTools panels themselves (Inspector, Web Console, Debugger, Style Editor, Performance, Network, …) still need to be adapted to the Nova look. Styling them is possible from the theme, so it is planned.
+- **Legacy sprites** — some tree and places icons still use the old `places.svg` sprite instead of Lucide.
+
 ## Building
 
 Simply download the contents of the "src" folder and pack the contents into a .zip file. Then, rename the file to .xpi and drag into the browser.
