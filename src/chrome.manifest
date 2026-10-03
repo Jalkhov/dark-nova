@@ -1,10 +1,10 @@
-skin abouthome darkmoon chrome/abouthome/
-skin browser darkmoon chrome/browser/
-skin mozapps darkmoon chrome/mozapps/
-skin global darkmoon chrome/global/
-skin os darkmoon chrome/os/linux/
-skin os darkmoon chrome/os/darwin/ os=Darwin
-skin os darkmoon chrome/os/winnt/ os=WINNT
+skin abouthome darknova chrome/abouthome/
+skin browser darknova chrome/browser/
+skin mozapps darknova chrome/mozapps/
+skin global darknova chrome/global/
+skin os darknova chrome/os/linux/
+skin os darknova chrome/os/darwin/ os=Darwin
+skin os darknova chrome/os/winnt/ os=WINNT
 
 override chrome://browser/skin/autocomplete.css chrome://global/skin/autocomplete.css
 override chrome://browser/skin/page-livemarks.png chrome://browser/skin/feeds/feedIcon16.svg

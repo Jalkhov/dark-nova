@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-NAME=darkmoon
+NAME=dark-nova
 VER=${1:-dev}
 FILE=$NAME-$VER-pm.xpi
 if test -f "$FILE"; then
