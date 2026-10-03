@@ -20,8 +20,8 @@
 .searchbar-engine-image {
   height: 16px;
   width: 16px;
-  list-style-image: url(chrome://browser/skin/places/places.svg);
-  -moz-image-region: rect(2px, 396px, 18px, 380px);
+  list-style-image: url("chrome://browser/skin/nova-icons/file.svg");
+  -moz-image-region: auto;
   margin-inline-start: 2px;
 }
 

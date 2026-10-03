@@ -82,23 +82,23 @@ radio[pane=paneAdvanced] {
   width: 16px;
   height: 16px;
   margin: 0 2px;
-  list-style-image: url(chrome://browser/skin/places/places.svg);
-  -moz-image-region: rect(2px, 18px, 18px, 2px);  /* defaultFavicon */
+  list-style-image: url("chrome://browser/skin/nova-icons/file.svg");
+  -moz-image-region: auto;  /* defaultFavicon */
 }
 
-#cookiesChildren::-moz-tree-image(domainCol, container) {
-  -moz-image-region: rect(2px, 198px, 18px, 182px);  /* folderItem */
+#cookiesChildren::-moz-tree-image(domainCol, container) { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;  /* folderItem */
 }
 
-#cookiesChildren::-moz-tree-image(domainCol, container, open) {
-  -moz-image-region: rect(2px, 198px, 18px, 182px);  /* folderItem */
+#cookiesChildren::-moz-tree-image(domainCol, container, open) { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;  /* folderItem */
 }
 
-#cookiesChildren::-moz-tree-image(selected,focus,domainCol) {
-  -moz-image-region: rect(2px, 378px, 18px, 362px);  /* defaultFaviconFocus */
+#cookiesChildren::-moz-tree-image(selected,focus,domainCol) { list-style-image: url("chrome://browser/skin/nova-icons/file.svg");
+  -moz-image-region: auto;  /* defaultFaviconFocus */
 }
-#cookiesChildren::-moz-tree-image(selected,focus,domainCol,container) {
-  -moz-image-region: rect(2px, 358px, 18px, 342px);  /* folderItemFocus */
+#cookiesChildren::-moz-tree-image(selected,focus,domainCol,container) { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;  /* folderItemFocus */
 }
 
 #cookiesChildren::-moz-tree-twisty(selected,focus) {

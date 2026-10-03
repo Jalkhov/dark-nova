@@ -13,8 +13,8 @@
 }
 
 .folder-icon {
-  list-style-image: url("chrome://browser/skin/places/places.svg");
-  -moz-image-region: rect(2px, 198px, 18px, 182px); 
+  list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto; 
 }
 
 
@@ -62,34 +62,34 @@
 /* ::::: bookmark panel dropdown icons ::::: */
 
 #editBMPanel_folderMenuList[selectedIndex="0"],
-#editBMPanel_toolbarFolderItem {
-  -moz-image-region: rect(2px, 138px, 18px, 122px);
+#editBMPanel_toolbarFolderItem { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
 #editBMPanel_folderMenuList[selectedIndex="1"],
-#editBMPanel_bmRootItem {
-  -moz-image-region: rect(2px, 158px, 18px, 142px);
+#editBMPanel_bmRootItem { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
 #editBMPanel_folderMenuList[selectedIndex="2"],
-#editBMPanel_unfiledRootItem {
-  -moz-image-region: rect(2px, 178px, 18px, 162px);
+#editBMPanel_unfiledRootItem { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
-menuitem.folder-icon[_moz-menuactive="true"] {
-  -moz-image-region: rect(2px, 358px, 18px, 342px);
+menuitem.folder-icon[_moz-menuactive="true"] { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
-#editBMPanel_toolbarFolderItem[_moz-menuactive="true"] {
-  -moz-image-region: rect(2px, 298px, 18px, 282px);
+#editBMPanel_toolbarFolderItem[_moz-menuactive="true"] { list-style-image: url("chrome://browser/skin/nova-icons/file.svg");
+  -moz-image-region: auto;
 }
 
-#editBMPanel_bmRootItem[_moz-menuactive="true"] {
-  -moz-image-region: rect(2px, 318px, 18px, 302px);
+#editBMPanel_bmRootItem[_moz-menuactive="true"] { list-style-image: url("chrome://browser/skin/nova-icons/file.svg");
+  -moz-image-region: auto;
 }
 
-#editBMPanel_unfiledRootItem[_moz-menuactive="true"] {
-  -moz-image-region: rect(2px, 338px, 18px, 322px);
+#editBMPanel_unfiledRootItem[_moz-menuactive="true"] { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
 #editBMPanel_folderMenuList > .menulist-label-box > .menulist-icon{

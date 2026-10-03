@@ -270,8 +270,8 @@
 #appmenu_showAllBookmarks,
 #bookmarksShowAll,
 #BMB_bookmarksShowAll {
-  list-style-image: url("chrome://browser/skin/places/places.svg");
-  -moz-image-region: rect(2px, 118px, 18px, 102px);
+  list-style-image: url("chrome://browser/skin/nova-icons/library.svg");
+  -moz-image-region: auto;
 }
 
 #appmenu_bookmarkThisPage,
@@ -285,14 +285,13 @@
 #wrapper-personal-bookmarks[place="palette"] > .toolbarpaletteitem-box {
   width: 16px;
   height: 16px;
-  background: -moz-image-rect(url("chrome://browser/skin/places/places.svg"),
-                              2, 138, 18, 122) no-repeat center;
+  background: -moz-image-rect(url("chrome://browser/skin/nova-icons/folder.svg"), 0, 16, 16, 0) no-repeat center;
 }
 
 .bookmarks-toolbar-customize {
   max-width: 15em !important;
-  list-style-image: url("chrome://browser/skin/places/places.svg") !important;
-  -moz-image-region: rect(2px, 138px, 18px, 122px);
+  list-style-image: url("chrome://browser/skin/nova-icons/folder.svg") !important;
+  -moz-image-region: auto;
 }
 
 /* ::::: bookmark menus ::::: */
@@ -315,48 +314,48 @@ menuitem.bookmark-item {
 /* ::::: bookmark items ::::: */
 
 .bookmark-item  {
-  list-style-image: url(chrome://browser/skin/places/places.svg);
-  -moz-image-region: rect(2px, 396px, 18px, 380px);
+  list-style-image: url("chrome://browser/skin/nova-icons/file.svg");
+  -moz-image-region: auto;
 }
 
-.bookmark-item[container] {
-  -moz-image-region: rect(2px, 198px, 18px, 182px);
+.bookmark-item[container] { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
-.bookmark-item[container][open] {
-  -moz-image-region: rect(2px, 198px, 18px, 182px);
+.bookmark-item[container][open] { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
-.bookmark-item[container][livemark] { 
-  -moz-image-region: rect(2px, 238px, 18px, 222px);
+.bookmark-item[container][livemark] { list-style-image: url("chrome://browser/skin/nova-icons/rss.svg"); 
+  -moz-image-region: auto;
 }
 
-.bookmark-item[container][livemark] .bookmark-item {
-  -moz-image-region: rect(2px, 258px, 18px, 242px);
+.bookmark-item[container][livemark] .bookmark-item { list-style-image: url("chrome://browser/skin/nova-icons/rss.svg");
+  -moz-image-region: auto;
 }
 
-.bookmark-item[container][livemark] .bookmark-item[visited] {
-  -moz-image-region: rect(2px, 278px, 18px, 262px);
+.bookmark-item[container][livemark] .bookmark-item[visited] { list-style-image: url("chrome://browser/skin/nova-icons/rss.svg");
+  -moz-image-region: auto;
 }
 
-.bookmark-item[container][query] {
-  -moz-image-region: rect(2px, 218px, 18px, 202px);
+.bookmark-item[container][query] { list-style-image: url("chrome://browser/skin/nova-icons/search.svg");
+  -moz-image-region: auto;
 }
 
-.bookmark-item[query][tagContainer] {
-  -moz-image-region: rect(2px, 98px, 18px, 82px);
+.bookmark-item[query][tagContainer] { list-style-image: url("chrome://browser/skin/nova-icons/tag.svg");
+  -moz-image-region: auto;
 }
 
-.bookmark-item[query][dayContainer] {
-  -moz-image-region: rect(2px, 58px, 18px, 42px);
+.bookmark-item[query][dayContainer] { list-style-image: url("chrome://browser/skin/nova-icons/calendar.svg");
+  -moz-image-region: auto;
 }
 
-.bookmark-item[query][hostContainer] {
-  -moz-image-region: rect(2px, 198px, 18px, 182px);
+.bookmark-item[query][hostContainer] { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
-.bookmark-item[query][hostContainer][open] {
-  -moz-image-region: rect(2px, 198px, 18px, 182px);
+.bookmark-item[query][hostContainer][open] { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
 .bookmark-item[cutting] > .toolbarbutton-icon,
@@ -1034,7 +1033,7 @@ window:not([chromehidden~=toolbar]) #navigator-toolbox[iconsize=large][mode=icon
 .ac-result-type-tag,
 .autocomplete-treebody::-moz-tree-image(tag, treecolAutoCompleteImage),
 .private-autocomplete-treebody::-moz-tree-image(tag, treecolAutoCompleteImage) {
-  list-style-image: url("chrome://browser/skin/places/places.svg#tag");
+  list-style-image: url("chrome://browser/skin/nova-icons/tag.svg");
   width: 16px; 
   height: 16px;
 }
@@ -1344,8 +1343,8 @@ richlistitem[type~="action"][actiontype="switchtab"] > .ac-url-box > .ac-action-
 .tab-icon-image {
   width: 16px;
   height: 16px;
-  list-style-image: url(chrome://browser/skin/places/places.svg);
-  -moz-image-region: rect(2px, 396px, 18px, 380px);
+  list-style-image: url("chrome://browser/skin/nova-icons/file.svg");
+  -moz-image-region: auto;
   margin-inline-start: 2px;
   margin-inline-end: 3px;
 }
@@ -1651,8 +1650,8 @@ toolbar:not([brighttext]) #alltabs-button[type="menu"] {
 
 
 .alltabs-item > .menu-iconic-left > .menu-iconic-icon {
-  list-style-image: url(chrome://browser/skin/places/places.svg);
-  -moz-image-region: rect(2px, 396px, 18px, 380px);
+  list-style-image: url("chrome://browser/skin/nova-icons/file.svg");
+  -moz-image-region: auto;
 }
 
 .alltabs-item[selected="true"] {
@@ -2094,14 +2093,14 @@ toolbarbutton.bookmark-item[dragover="true"][open="true"] {
 #bookmarksToolbarFolderMenu,
 #appmenu_bookmarksToolbar,
 #BMB_bookmarksToolbar {
-  list-style-image: url("chrome://browser/skin/places/places.svg");
-  -moz-image-region: rect(2px, 138px, 18px, 122px);
+  list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
 #appmenu_unsortedBookmarks,
 #BMB_unsortedBookmarks {
-  list-style-image: url("chrome://browser/skin/places/places.svg");
-  -moz-image-region: rect(2px, 178px, 18px, 162px);
+  list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
+  -moz-image-region: auto;
 }
 
 /* ::::: Keyboard UI Panel ::::: */
