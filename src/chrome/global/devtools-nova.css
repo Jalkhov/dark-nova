@@ -75,7 +75,8 @@
   border-radius: var(--nova-radius-sm) !important;
   margin: 0 2px !important;
   min-height: 22px !important;
-  padding: 0 6px !important;
+  max-width: 150px !important;
+  padding: 0 8px !important;
 }
 
 .devtools-tabbar .devtools-tab[selected],
