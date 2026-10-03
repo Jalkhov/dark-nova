@@ -6,6 +6,7 @@
 @import url(resource://devtools/client/themes/common.css);
 @import url("chrome://devtools/skin/toolbars.css");
 @import url("chrome://devtools/skin/tooltips.css");
+@import url("chrome://browser/skin/devtools/nova.css");
 
 body {
   margin: 0;
@@ -390,22 +391,4 @@ div.CodeMirror span.eval-text {
   --theme-tooltip-shadow: rgba(0, 0, 0, 0.5);
   --theme-focus-border-color-textbox: #9d8cff;
   --theme-textbox-box-shadow: rgba(157, 140, 255, .6);
-}
-
-/* ===== Dark Nova — polish ===== */
-
-.devtools-textinput,
-.devtools-searchinput,
-.devtools-filterinput,
-.devtools-plaininput {
-  -moz-appearance: none;
-  background-color: #26262d;
-  color: #b9b9c6;
-  border: 1px solid #3b3b46;
-  border-radius: 6px;
-}
-
-.devtools-searchinput,
-.devtools-filterinput {
-  padding-inline-start: 24px;
 }

@@ -1,0 +1,152 @@
+/* ============================================================================
+   NOVA — Controles de Developer Tools
+   ----------------------------------------------------------------------------
+   Se importa desde light-theme.css / dark-theme.css (los paneles cargan esa
+   hoja en su iframe). Los colores van en literal porque los iframes no cargan
+   chrome://global/skin/global.css.
+   ========================================================================== */
+
+/* El tema "claro" de DevTools lo renderizamos oscuro, así que invertimos los
+   iconos (pensados para fondo claro) y ajustamos las variables del toolbar. */
+.theme-light {
+  --icon-filter: invert(1);
+  --checked-icon-filter: url(chrome://devtools/skin/images/filters.svg#dark-theme-checked-icon-state);
+  --toolbar-tab-hover: rgba(255, 255, 255, .07);
+  --toolbar-tab-hover-active: rgba(255, 255, 255, .13);
+  --searchbox-background-color: #31313a;
+  --searchbox-border-color: #3b3b46;
+  --toolbar-button-border-color: rgba(255, 255, 255, .08);
+}
+
+/* ::::: cajas de texto ::::: */
+
+.devtools-textinput,
+.devtools-searchinput,
+.devtools-filterinput,
+.devtools-plaininput,
+input[type="text"],
+input[type="search"] {
+  -moz-appearance: none;
+  background-color: #31313a;
+  color: #fbfbfe;
+  border: 1px solid #3b3b46;
+  border-radius: 6px;
+}
+
+.devtools-searchinput,
+.devtools-filterinput {
+  padding-inline-start: 24px;
+}
+
+/* ::::: selects (HTML menulist) ::::: */
+
+select,
+.devtools-menulist {
+  -moz-appearance: none !important;
+  background-color: #31313a !important;
+  color: #fbfbfe !important;
+  border: 1px solid #3b3b46 !important;
+  border-radius: 6px !important;
+  min-height: 26px;
+  padding: 3px 26px 3px 8px !important;
+  background-image: url("chrome://global/skin/arrow/arrow-v.svg#dn");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 10px;
+}
+
+select:hover,
+.devtools-menulist:hover {
+  border-color: #6f5fd8 !important;
+}
+
+/* ::::: checkboxes / radios (HTML, usados en Settings) ::::: */
+
+input[type="checkbox"],
+input[type="radio"] {
+  -moz-appearance: none !important;
+  width: 16px;
+  height: 16px;
+  margin: 0 7px 0 0;
+  border: 1px solid #4a4a56;
+  border-radius: 4px;
+  background-color: #31313a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11px;
+  transition: background-color 90ms ease, border-color 90ms ease;
+}
+
+input[type="radio"] {
+  border-radius: 999px;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  border-color: #6f5fd8;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:indeterminate {
+  background-color: #6f5fd8;
+  border-color: #6f5fd8;
+  background-image: url("chrome://browser/skin/devtools/check.svg");
+}
+
+input[type="checkbox"]:disabled,
+input[type="radio"]:disabled {
+  opacity: .45;
+}
+
+input[type="radio"]:checked {
+  background-color: #6f5fd8;
+  border-color: #6f5fd8;
+  box-shadow: inset 0 0 0 3px #1e1e23;
+}
+
+/* ::::: checkboxes XUL (otros paneles) ::::: */
+
+checkbox > .checkbox-check,
+radio > .radio-check {
+  -moz-appearance: none !important;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #4a4a56;
+  border-radius: 4px;
+  background-color: #31313a;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 11px;
+}
+
+radio > .radio-check {
+  border-radius: 999px;
+}
+
+checkbox[checked="true"] > .checkbox-check,
+checkbox[checked="true"] > .checkbox-check[checked] {
+  background-color: #6f5fd8 !important;
+  border-color: #6f5fd8 !important;
+  background-image: url("chrome://browser/skin/devtools/check.svg");
+}
+
+radio[selected="true"] > .radio-check,
+radio[checked="true"] > .radio-check {
+  background-color: #6f5fd8 !important;
+  border-color: #6f5fd8 !important;
+  box-shadow: inset 0 0 0 3px #1e1e23;
+}
+
+/* ::::: botones ::::: */
+
+button,
+.devtools-button {
+  border-radius: 6px;
+}
+
+/* ::::: tooltips ::::: */
+
+.devtools-tooltip,
+.tooltip-panel {
+  border-radius: 6px;
+}
