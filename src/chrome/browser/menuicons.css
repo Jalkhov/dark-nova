@@ -72,7 +72,9 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
   -moz-image-region: auto !important;
 }
 
-#inspect {
+#inspect,
+#menuitem_jsdebugger,
+#appmenuitem_jsdebugger {
   list-style-image: url("chrome://browser/skin/menu-icons/bug.svg") !important;
   -moz-image-region: auto !important;
 }
@@ -101,12 +103,7 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
   -moz-image-region: auto !important;
 }
 
-#webDeveloperMenu,
-#menu_pageSource,
-#context-viewsource,
-#context-viewframesource,
-#context-viewpartialsource-selection,
-#context-viewpartialsource-mathml {
+#webDeveloperMenu {
   list-style-image: url("chrome://browser/skin/menu-icons/code.svg") !important;
   -moz-image-region: auto !important;
 }
@@ -136,6 +133,15 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
 
 #context-showonlythisframe {
   list-style-image: url("chrome://browser/skin/menu-icons/eye.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_pageSource,
+#context-viewsource,
+#context-viewframesource,
+#context-viewpartialsource-selection,
+#context-viewpartialsource-mathml {
+  list-style-image: url("chrome://browser/skin/menu-icons/file-code.svg") !important;
   -moz-image-region: auto !important;
 }
 
@@ -171,7 +177,9 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
   -moz-image-region: auto !important;
 }
 
-#context-media-playbackrate {
+#context-media-playbackrate,
+#menuitem_performance,
+#appmenuitem_performance {
   list-style-image: url("chrome://browser/skin/menu-icons/gauge.svg") !important;
   -moz-image-region: auto !important;
 }
@@ -270,8 +278,28 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
   -moz-image-region: auto !important;
 }
 
-#pageStyleMenu {
+#menuitem_netmonitor,
+#appmenuitem_netmonitor {
+  list-style-image: url("chrome://browser/skin/menu-icons/network.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_scratchpad,
+#appmenu_scratchpad {
+  list-style-image: url("chrome://browser/skin/menu-icons/notebook-pen.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#pageStyleMenu,
+#menuitem_styleeditor,
+#appmenuitem_styleeditor {
   list-style-image: url("chrome://browser/skin/menu-icons/palette.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_devToolbar,
+#appmenu_devToolbar {
+  list-style-image: url("chrome://browser/skin/menu-icons/panel-bottom.svg") !important;
   -moz-image-region: auto !important;
 }
 
@@ -305,6 +333,12 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
   -moz-image-region: auto !important;
 }
 
+#menu_eyedropper,
+#appmenu_eyedropper {
+  list-style-image: url("chrome://browser/skin/menu-icons/pipette.svg") !important;
+  -moz-image-region: auto !important;
+}
+
 #context-media-play,
 #context-ctp-play {
   list-style-image: url("chrome://browser/skin/menu-icons/play.svg") !important;
@@ -313,7 +347,9 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
 
 #menu_newNavigatorTab,
 #appmenu_newTab,
-#appmenu_newTab_popup {
+#appmenu_newTab_popup,
+#menu_getMoreDevtools,
+#appmenu_getMoreDevtools {
   list-style-image: url("chrome://browser/skin/menu-icons/plus.svg") !important;
   -moz-image-region: auto !important;
 }
@@ -410,6 +446,18 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
   -moz-image-region: auto !important;
 }
 
+#menuitem_inspector,
+#appmenuitem_inspector {
+  list-style-image: url("chrome://browser/skin/menu-icons/search-code.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_devtools_serviceworkers,
+#appmenu_devtools_serviceworkers {
+  list-style-image: url("chrome://browser/skin/menu-icons/server.svg") !important;
+  -moz-image-region: auto !important;
+}
+
 #menu_preferences,
 #appmenu_preferences {
   list-style-image: url("chrome://browser/skin/menu-icons/settings.svg") !important;
@@ -427,6 +475,12 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
   -moz-image-region: auto !important;
 }
 
+#menu_responsiveUI,
+#appmenu_responsiveUI {
+  list-style-image: url("chrome://browser/skin/menu-icons/smartphone.svg") !important;
+  -moz-image-region: auto !important;
+}
+
 #spell-check-enabled {
   list-style-image: url("chrome://browser/skin/menu-icons/spell-check.svg") !important;
   -moz-image-region: auto !important;
@@ -437,6 +491,12 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
 #context-openframeintab,
 #placesContext_openContainer\:tabs {
   list-style-image: url("chrome://browser/skin/menu-icons/square-plus.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_browserConsole,
+#appmenu_browserConsole {
+  list-style-image: url("chrome://browser/skin/menu-icons/square-terminal.svg") !important;
   -moz-image-region: auto !important;
 }
 
@@ -455,7 +515,9 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
   -moz-image-region: auto !important;
 }
 
-#javascriptConsole {
+#javascriptConsole,
+#menuitem_webconsole,
+#appmenuitem_webconsole {
   list-style-image: url("chrome://browser/skin/menu-icons/terminal.svg") !important;
   -moz-image-region: auto !important;
 }
@@ -503,7 +565,9 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
 }
 
 #menu_customizeToolbars,
-#appmenu_customize {
+#appmenu_customize,
+#menu_devToolbox,
+#appmenu_devToolbox {
   list-style-image: url("chrome://browser/skin/menu-icons/wrench.svg") !important;
   -moz-image-region: auto !important;
 }
