@@ -193,3 +193,74 @@
 #forward-button {
   margin-right: 0;
 }
+
+/* ============================================================================
+   NOVA — Biblioteca (Places Organizer)
+   ========================================================================== */
+
+#placesToolbar {
+  background-color: var(--nova-surface);
+  padding: 5px 8px;
+}
+
+#placesMenu > menu {
+  border: 1px solid transparent;
+  border-radius: var(--nova-radius-sm);
+  padding: 4px 8px;
+}
+
+#placesMenu > menu:hover {
+  border-color: transparent;
+  background-color: var(--nova-hover);
+}
+
+#placesMenu > menu[open="true"],
+#placesMenu > menu[_moz-menuactive="true"] {
+  border-color: transparent;
+  background-color: var(--nova-active);
+}
+
+#placesMenu > menu > .menubar-text {
+  padding-inline-end: 18px;
+  background-position: right 4px center;
+}
+
+#placesToolbar > toolbarbutton {
+  border: 1px solid transparent;
+  border-radius: var(--nova-radius-sm);
+  margin-left: 4px;
+}
+
+#placesToolbar > toolbarbutton:not([disabled="true"]):hover {
+  border-color: transparent;
+  background-color: var(--nova-hover);
+}
+
+#placesToolbar > toolbarbutton:not([disabled="true"]):hover:active,
+#placesToolbar > toolbarbutton:not([disabled="true"])[open="true"] {
+  border-color: transparent;
+  background-color: var(--nova-active);
+}
+
+#placesView {
+  border-top: 1px solid var(--nova-border);
+}
+
+#detailsDeck {
+  border-top: 1px solid var(--nova-border);
+  padding: 8px;
+}
+
+#searchFilter {
+  -moz-appearance: none;
+  padding: 5px 10px;
+  background-color: var(--nova-surface-2);
+  background-clip: padding-box;
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-sm);
+  color: var(--nova-text);
+}
+
+#placesView > splitter {
+  border-inline-end: 1px solid var(--nova-border);
+}
