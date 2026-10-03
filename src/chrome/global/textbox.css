@@ -120,3 +120,40 @@ toolbarpaletteitem > toolbaritem > textbox > .textbox-input-box > html|*.textbox
   }
 }
 
+/* ============================================================================
+   NOVA — Textboxes
+   ========================================================================== */
+
+textbox {
+  -moz-appearance: none;
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-sm);
+  background-color: var(--nova-surface-2);
+  color: var(--nova-text);
+  margin: 3px 6px;
+  padding: 4px 8px;
+  transition: background-color var(--nova-transition), border-color var(--nova-transition), box-shadow var(--nova-transition);
+}
+
+textbox:hover:not([disabled="true"]) {
+  background-color: var(--nova-surface-3);
+}
+
+textbox[focused="true"] {
+  border-color: var(--nova-accent);
+  background-color: var(--nova-window);
+  box-shadow: 0 0 0 2px var(--nova-focus);
+}
+
+/* Icono interno (lupa, limpiar): deja aire respecto al borde */
+
+.textbox-search-icon {
+  margin-inline-start: 6px;
+  margin-inline-end: 6px;
+}
+
+.textbox-search-clear {
+  margin-inline-start: 4px;
+  margin-inline-end: 6px;
+}
+

@@ -370,3 +370,62 @@ treechildren:-moz-locale-dir(rtl)::-moz-tree-twisty(hover) {
 treechildren:-moz-locale-dir(rtl)::-moz-tree-twisty(hover, open) {
   list-style-image: url("chrome://global/skin/tree/twisty.svg#open-hover-rtl");
 }
+
+/* ============================================================================
+   NOVA — Árboles (biblioteca, gestor de cookies, buscadores, etc.)
+   ========================================================================== */
+
+tree {
+  margin: 0 4px;
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-md);
+  background-color: var(--nova-surface-2);
+  color: var(--nova-text);
+}
+
+treechildren::-moz-tree-row {
+  min-height: 24px;
+}
+
+treechildren::-moz-tree-cell {
+  padding: 0 6px;
+}
+
+treechildren::-moz-tree-row(selected) {
+  background-color: var(--nova-surface-3);
+}
+
+treechildren::-moz-tree-row(selected, focus) {
+  background-color: var(--nova-active);
+}
+
+treechildren::-moz-tree-row(selected, current, focus) {
+  border: none;
+}
+
+treecol,
+treecolpicker {
+  border-color: var(--nova-border);
+  background-color: var(--nova-surface-2);
+  color: var(--nova-text);
+  padding: 5px 8px;
+}
+
+treecol:hover:active,
+treecolpicker:hover:active {
+  background-color: var(--nova-surface-3);
+}
+
+treechildren::-moz-tree-separator {
+  border-top: 1px solid var(--nova-border);
+}
+
+treechildren::-moz-tree-twisty {
+  padding-inline-end: 6px;
+  padding-top: 0;
+  width: 12px;
+}
+
+treechildren::-moz-tree-indentation {
+  width: 16px;
+}

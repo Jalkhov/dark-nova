@@ -149,3 +149,54 @@ button[type="disclosure"] {
 button[type="disclosure"][open="true"] {
   list-style-image: url("chrome://global/skin/tree/twisty.svg#open");
 }
+
+/* ============================================================================
+   NOVA — Botones (diálogos y ventanas)
+   ========================================================================== */
+
+button:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
+  -moz-border-top-colors: none !important;
+  -moz-border-right-colors: none !important;
+  -moz-border-bottom-colors: none !important;
+  -moz-border-left-colors: none !important;
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-sm);
+  background-color: var(--nova-surface-2);
+  color: var(--nova-text);
+  padding: 5px 12px;
+  min-height: 30px;
+  transition: background-color var(--nova-transition),
+              border-color var(--nova-transition),
+              box-shadow var(--nova-transition);
+}
+
+button:not([type="menu-button"]):not([type="disclosure"]):not(.plain):hover:not(:active):not([disabled="true"]) {
+  background-color: var(--nova-surface-3);
+  border-color: var(--nova-border-strong);
+}
+
+button:not([type="menu-button"]):not([type="disclosure"]):not(.plain):hover:active,
+button:not([type="menu-button"]):not([type="disclosure"]):not(.plain)[open="true"],
+button:not([type="menu-button"]):not([type="disclosure"]):not(.plain)[checked="true"] {
+  background-color: var(--nova-active);
+  border-color: var(--nova-border-strong);
+}
+
+button:not([type="menu-button"]):not([type="disclosure"]):not(.plain):focus {
+  border-color: var(--nova-accent);
+  box-shadow: 0 0 0 2px var(--nova-focus);
+}
+
+button[default="true"]:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
+  border-color: var(--nova-accent);
+}
+
+button[disabled="true"]:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
+  background-color: var(--nova-surface);
+  color: GrayText;
+  opacity: .6;
+}
+
+.button-box {
+  padding: 2px 6px;
+}
