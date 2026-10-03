@@ -1,1 +1,46 @@
 @import url("chrome://os/skin/global/toolbarbutton.css");
+
+/* ============================================================================
+   NOVA — Toolbarbuttons (compartido: Linux, Windows y macOS)
+   ========================================================================== */
+
+toolbarbutton {
+  border-radius: var(--nova-radius-sm);
+  color: var(--nova-text);
+  transition: background-color var(--nova-transition), color var(--nova-transition);
+}
+
+toolbarbutton:not(.toolbarbutton-1):not([disabled="true"]):not([type="menu-button"]):hover {
+  background-color: var(--nova-hover);
+}
+
+toolbarbutton:hover:active,
+toolbarbutton[open="true"] {
+  /* Neutraliza el desplazamiento de padding heredado de White Moon */
+  padding-top: 3px !important;
+  padding-bottom: 3px !important;
+  padding-inline-start: 3px !important;
+  padding-inline-end: 3px !important;
+}
+
+toolbarbutton:not(.toolbarbutton-1):not([disabled="true"]):hover:active,
+toolbarbutton:not(.toolbarbutton-1)[open="true"] {
+  background-color: var(--nova-active);
+}
+
+toolbarbutton:not(.toolbarbutton-1)[checked="true"]:not([disabled="true"]):not(:hover) {
+  background-color: var(--nova-selected);
+  color: var(--nova-text);
+}
+
+toolbarbutton[type="menu-button"] {
+  border-radius: var(--nova-radius-sm);
+}
+
+.toolbarbutton-badge {
+  background-color: var(--nova-accent);
+  border-radius: var(--nova-radius-pill);
+  box-shadow: none;
+  color: #16121f;
+  font-weight: 600;
+}

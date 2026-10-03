@@ -200,3 +200,47 @@ toolbarpaletteitem > toolbaritem > * > textbox > hbox > hbox > html|*.textbox-in
   visibility: hidden;
 }
 
+/* ============================================================================
+   NOVA — Autocomplete
+   ========================================================================== */
+
+panel[type="autocomplete"],
+panel[type="autocomplete-richlistbox"],
+.autocomplete-history-popup,
+panel[type="private-autocomplete"],
+panel[type="private-autocomplete-richlistbox"],
+.private-autocomplete-history-popup {
+  border: 1px solid var(--nova-border);
+  -moz-border-top-colors: var(--nova-border);
+  -moz-border-right-colors: var(--nova-border);
+  -moz-border-bottom-colors: var(--nova-border);
+  -moz-border-left-colors: var(--nova-border);
+  border-radius: var(--nova-radius-lg);
+  padding: 6px;
+  background-color: var(--nova-surface-2);
+  color: var(--nova-text);
+}
+
+.autocomplete-richlistitem,
+.private-autocomplete-richlistitem {
+  padding: 6px 8px;
+  border-radius: var(--nova-radius-sm);
+}
+
+.autocomplete-richlistitem[selected="true"],
+.private-autocomplete-richlistitem[selected="true"] {
+  color: var(--nova-text);
+  background-color: var(--nova-surface-3);
+}
+
+treechildren.autocomplete-treebody::-moz-tree-row(selected),
+treechildren.private-autocomplete-treebody::-moz-tree-row(selected) {
+  background-color: var(--nova-surface-3);
+}
+
+html|span.ac-emphasize-text {
+  box-shadow: none;
+  background-color: var(--nova-focus);
+  border-radius: var(--nova-radius-xs);
+}
+

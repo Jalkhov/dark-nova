@@ -66,3 +66,32 @@ toolbarpaletteitem[dragover="left"] {
 toolbarpaletteitem[dragover="right"] {
   border-right-color: rgb(75,75,75);
 }
+
+/* ============================================================================
+   NOVA — Toolbars (compartido: Linux, Windows y macOS)
+   ========================================================================== */
+
+toolbox {
+  background-color: var(--nova-surface);
+  border-top: 1px solid var(--nova-border);
+  color: var(--nova-text);
+}
+
+toolbar {
+  background-color: var(--nova-surface);
+  border-top: 1px solid var(--nova-border);
+  border-bottom: none;
+  color: var(--nova-text);
+}
+
+toolbar:first-child,
+menubar {
+  border-bottom: 1px solid var(--nova-border);
+}
+
+toolbarseparator {
+  margin: 4px 6px;
+  background: none;
+  background-color: var(--nova-border);
+  width: 1px !important;
+}

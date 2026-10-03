@@ -1,1 +1,45 @@
 @import url("chrome://os/skin/global/menu.css");
+
+/* ============================================================================
+   NOVA — Menús (compartido: Linux, Windows y macOS)
+   ----------------------------------------------------------------------------
+   Se aplica después del import del skin del sistema para ganar en cascada.
+   ========================================================================== */
+
+menu,
+menuitem,
+menucaption,
+.splitmenu-menuitem {
+  padding: 6px 12px 6px 10px;
+  border-radius: var(--nova-radius-sm);
+  margin: 1px 4px;
+  color: var(--nova-text);
+  transition: background-color 90ms ease, color 90ms ease;
+}
+
+menu[_moz-menuactive="true"],
+menuitem[_moz-menuactive="true"],
+.splitmenu-menuitem[_moz-menuactive="true"] {
+  background-color: var(--nova-surface-3);
+  color: var(--nova-text);
+}
+
+menubar > menu {
+  padding: 2px 8px;
+  border-radius: var(--nova-radius-sm);
+}
+
+menubar > menu[open],
+menubar > menu[_moz-menuactive="true"]:not([disabled="true"]) {
+  background-color: var(--nova-surface-3);
+  color: var(--nova-text);
+}
+
+menuseparator {
+  margin: 5px 10px;
+  border-top: 1px solid var(--nova-border);
+}
+
+.menu-iconic-left {
+  padding-inline-end: 8px !important;
+}

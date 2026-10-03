@@ -152,3 +152,58 @@ findbar[hidden] {
 .find-status-icon[status="pending"] {
   list-style-image: url("chrome://global/skin/icons/loading_16.png");
 }
+
+/* ============================================================================
+   NOVA — Find bar
+   ========================================================================== */
+
+findbar {
+  padding: 6px 8px;
+  box-shadow: none;
+  background-image: none;
+  background-color: var(--nova-surface);
+  border-top: 1px solid var(--nova-border);
+}
+
+.findbar-textbox {
+  -moz-appearance: none;
+  border: 1px solid transparent;
+  border-radius: var(--nova-radius-sm);
+  background-color: var(--nova-surface-2);
+  color: var(--nova-text);
+  margin: 0;
+  padding: 5px 8px;
+}
+
+.findbar-textbox[focused="true"] {
+  border-color: var(--nova-accent);
+  background-color: var(--nova-window);
+  box-shadow: 0 0 0 2px var(--nova-focus);
+}
+
+.findbar-textbox:-moz-placeholder,
+.findbar-textbox > .autocomplete-textbox-container > .textbox-input-box > html|*.textbox-input:-moz-placeholder {
+  color: var(--nova-text-dim) !important;
+}
+
+.findbar-textbox.minimal {
+  border-radius: var(--nova-radius-sm);
+}
+
+.findbar-find-previous,
+.findbar-find-next {
+  -moz-appearance: none;
+  background: var(--nova-surface-2);
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-sm);
+}
+
+.findbar-find-previous:not([disabled]):active,
+.findbar-find-next:not([disabled]):active {
+  background: var(--nova-active);
+}
+
+.findbar-highlight,
+.findbar-case-sensitive {
+  border-radius: var(--nova-radius-sm);
+}

@@ -1,1 +1,35 @@
 @import url("chrome://os/skin/global/popup.css");
+
+/* ============================================================================
+   NOVA — Popups, paneles y tooltips (compartido: Linux, Windows y macOS)
+   ========================================================================== */
+
+menupopup {
+  background: var(--nova-surface-2);
+  -moz-border-top-colors: var(--nova-border);
+  -moz-border-left-colors: var(--nova-border);
+  -moz-border-right-colors: var(--nova-border);
+  -moz-border-bottom-colors: var(--nova-border);
+  border-radius: var(--nova-radius-lg);
+  padding: 6px;
+  color: var(--nova-text);
+}
+
+.panel-arrowcontent {
+  padding: 12px;
+  color: var(--nova-text);
+  background: var(--nova-surface-2);
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-lg);
+  box-shadow: var(--nova-shadow);
+}
+
+tooltip {
+  margin-top: 24px;
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-sm);
+  padding: 5px 9px;
+  background-color: var(--nova-surface-4);
+  color: var(--nova-text);
+  box-shadow: var(--nova-shadow-sm);
+}
