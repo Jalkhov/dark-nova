@@ -161,10 +161,12 @@ button:not([type="menu-button"]):not([type="disclosure"]):not(.plain) {
   -moz-border-left-colors: none !important;
   border: 1px solid var(--nova-border);
   border-radius: var(--nova-radius-sm);
+  box-sizing: border-box;
   background-color: var(--nova-surface-3);
   color: var(--nova-text);
-  padding: 5px 12px;
-  min-height: 30px;
+  height: 32px;
+  min-height: 32px;
+  padding: 0 12px;
   transition: background-color var(--nova-transition),
               border-color var(--nova-transition),
               box-shadow var(--nova-transition);
@@ -198,5 +200,5 @@ button[disabled="true"]:not([type="menu-button"]):not([type="disclosure"]):not(.
 }
 
 .button-box {
-  padding: 2px 6px;
+  padding: 1px 4px;
 }

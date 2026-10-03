@@ -7,9 +7,11 @@
 menulist {
   border: 1px solid var(--nova-border);
   border-radius: var(--nova-radius-sm);
+  box-sizing: border-box;
   background-color: var(--nova-surface-3);
   margin: 3px 6px;
-  min-height: 30px;
+  height: 32px;
+  min-height: 32px;
   transition: background-color var(--nova-transition), border-color var(--nova-transition);
 }
 
@@ -33,13 +35,13 @@ menulist[disabled="true"]:hover:active {
 
 /* El borde de 1px está siempre presente para que el foco no cambie el tamaño */
 .menulist-label-box {
-  margin: 1px;
+  margin: 0;
   border: 1px solid transparent;
   background-color: transparent;
 }
 
 .menulist-label {
-  margin: 3px 12px !important;
+  margin: 0 12px !important;
 }
 
 menulist:focus:not([open="true"]) > .menulist-label-box {
