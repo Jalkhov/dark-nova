@@ -150,6 +150,20 @@ button,
   border-radius: 6px;
 }
 
+/* Los toolbarbuttons de las toolbars de DevTools no deben heredar el padding
+   del tema (recortaba el texto de los filtros de la consola). */
+.devtools-toolbar toolbarbutton,
+.devtools-toolbar .devtools-toolbarbutton,
+.hud-console-filter-toolbar toolbarbutton {
+  padding: 0 !important;
+  min-height: 24px;
+}
+
+.devtools-toolbar toolbarbutton > .toolbarbutton-menubutton-button,
+.hud-console-filter-toolbar toolbarbutton > .toolbarbutton-menubutton-button {
+  padding: 0 3px !important;
+}
+
 /* ::::: tooltips ::::: */
 
 .devtools-tooltip,
