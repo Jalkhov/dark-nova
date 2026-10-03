@@ -15,8 +15,9 @@ Forked from [Dark Moon](https://github.com/Lootyhoof/darkmoon), which is based o
 
 These areas are not fully styled yet and are tracked here for future work:
 
+- **Permissions Manager** (`about:permissions`) — still needs a Nova pass; its permission dropdowns (menulists) also show overly small carets.
 - **Page Info window** — the *Page Info* dialog (General, Media, Security and Headers tabs) still uses the inherited White Moon styling and icons.
-- **Developer Tools (F12)** — the menu entries are iconized, but the DevTools panels themselves (Inspector, Web Console, Debugger, Style Editor, Performance, Network, …) still need to be adapted to the Nova look. Styling them is possible from the theme, so it is planned.
+- **Developer Tools (F12)** — the color scheme now follows the Nova palette, but the panels still need shape/detail work (toolbox tabs, splitters, buttons, console output). Styling them is possible from the theme, so it is planned.
 - **Legacy sprites** — some tree and places icons still use the old `places.svg` sprite instead of Lucide.
 
 ## Building
