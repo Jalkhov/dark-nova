@@ -1,0 +1,531 @@
+/* ============================================================================
+   NOVA — Iconos de menú (generado por tools/gen_icons.py)
+   ----------------------------------------------------------------------------
+   Hace "iconic" los menuitems/menús y les asigna un icono Lucide.
+   ========================================================================== */
+
+menupopup > menuitem:not([type="checkbox"]):not([type="radio"]):not(.bookmark-item) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+menupopup > menu:not(.bookmark-item) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menu-iconic");
+}
+
+menupopup > menuitem[disabled="true"] > .menu-iconic-left > .menu-iconic-icon,
+menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
+  opacity: .4;
+}
+
+#menu_newNavigator,
+#appmenu_newNavigator,
+#placesContext_open\:newwindow,
+#historyUndoWindowMenu {
+  list-style-image: url("chrome://browser/skin/menu-icons/app-window.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#historyMenuBack,
+#context-back {
+  list-style-image: url("chrome://browser/skin/menu-icons/arrow-left.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-bidi-text-direction-toggle,
+#context-bidi-page-direction-toggle {
+  list-style-image: url("chrome://browser/skin/menu-icons/arrow-left-right.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#historyMenuForward,
+#context-forward {
+  list-style-image: url("chrome://browser/skin/menu-icons/arrow-right.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_tabsOnTop {
+  list-style-image: url("chrome://browser/skin/menu-icons/arrow-up-to-line.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#spell-add-to-dictionary,
+#spell-add-dictionaries-main {
+  list-style-image: url("chrome://browser/skin/menu-icons/book-plus.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#placesContext_new\:bookmark {
+  list-style-image: url("chrome://browser/skin/menu-icons/bookmark.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_bookmarkAllTabs,
+#context_bookmarkAllTabs,
+#BMB_bookmarkAllTabs {
+  list-style-image: url("chrome://browser/skin/menu-icons/bookmark-plus.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_selectAll,
+#context-selectall {
+  list-style-image: url("chrome://browser/skin/menu-icons/box-select.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#inspect {
+  list-style-image: url("chrome://browser/skin/menu-icons/bug.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_openHelp,
+#appmenu_help,
+#appmenu_openHelp {
+  list-style-image: url("chrome://browser/skin/menu-icons/circle-help.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_paste,
+#context-paste,
+#placesContext_paste {
+  list-style-image: url("chrome://browser/skin/menu-icons/clipboard-paste.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#checkForUpdates {
+  list-style-image: url("chrome://browser/skin/menu-icons/cloud-download.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#goOfflineMenuitem {
+  list-style-image: url("chrome://browser/skin/menu-icons/cloud-off.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#webDeveloperMenu,
+#menu_pageSource,
+#context-viewsource,
+#context-viewframesource,
+#context-viewpartialsource-selection,
+#context-viewpartialsource-mathml {
+  list-style-image: url("chrome://browser/skin/menu-icons/code.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_copy,
+#context-copy,
+#context-copyimage,
+#placesContext_copy {
+  list-style-image: url("chrome://browser/skin/menu-icons/copy.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_openDownloads,
+#appmenu_downloads {
+  list-style-image: url("chrome://browser/skin/menu-icons/download.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context_openTabInWindow,
+#context-openlink,
+#context-openframe,
+#context-viewimage,
+#context-viewvideo {
+  list-style-image: url("chrome://browser/skin/menu-icons/external-link.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-showonlythisframe {
+  list-style-image: url("chrome://browser/skin/menu-icons/eye.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_printPreview,
+#appmenu_printPreview {
+  list-style-image: url("chrome://browser/skin/menu-icons/file-search.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#releaseNotes {
+  list-style-image: url("chrome://browser/skin/menu-icons/file-text.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#bookmarksToolbarFolderMenu,
+#appmenu_bookmarksToolbar,
+#BMB_bookmarksToolbar {
+  list-style-image: url("chrome://browser/skin/menu-icons/folder.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_openFile,
+#appmenu_openFile,
+#menu_unsortedBookmarks,
+#appmenu_unsortedBookmarks,
+#BMB_unsortedBookmarks {
+  list-style-image: url("chrome://browser/skin/menu-icons/folder-open.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#placesContext_new\:folder {
+  list-style-image: url("chrome://browser/skin/menu-icons/folder-plus.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-media-playbackrate {
+  list-style-image: url("chrome://browser/skin/menu-icons/gauge.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_historySidebar,
+#menu_showAllHistory,
+#appmenu_history,
+#appmenu_showAllHistory,
+#HMB_showAllHistory {
+  list-style-image: url("chrome://browser/skin/menu-icons/history.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#historyMenuHome {
+  list-style-image: url("chrome://browser/skin/menu-icons/house.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-viewbgimage,
+#context-viewimageinfo {
+  list-style-image: url("chrome://browser/skin/menu-icons/image.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_pageInfo,
+#context-viewinfo,
+#context-viewframeinfo,
+#placesContext_show\:info,
+#aboutName,
+#appmenu_about {
+  list-style-image: url("chrome://browser/skin/menu-icons/info.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#view_charsetMenu,
+#spell-dictionaries-menu {
+  list-style-image: url("chrome://browser/skin/menu-icons/languages.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_showAllTabs {
+  list-style-image: url("chrome://browser/skin/menu-icons/layout-grid.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_bookmarksSidebar,
+#menu_showAllBookmarks,
+#appmenu_bookmarks,
+#appmenu_showAllBookmarks,
+#bookmarksShowAll,
+#BMB_bookmarksShowAll {
+  list-style-image: url("chrome://browser/skin/menu-icons/library.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-copylink,
+#context-copyvideourl,
+#context-copyaudiourl {
+  list-style-image: url("chrome://browser/skin/menu-icons/link.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#placesContext_sortBy\:name {
+  list-style-image: url("chrome://browser/skin/menu-icons/list-ordered.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_sendLink,
+#context-sendpage,
+#context-sendimage,
+#context-sendlink,
+#context-copyemail {
+  list-style-image: url("chrome://browser/skin/menu-icons/mail.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#fullScreenItem,
+#context-video-fullscreen {
+  list-style-image: url("chrome://browser/skin/menu-icons/maximize.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#feedbackPage {
+  list-style-image: url("chrome://browser/skin/menu-icons/message-square.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-setDesktopBackground {
+  list-style-image: url("chrome://browser/skin/menu-icons/monitor.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#sync-tabs-menuitem,
+#HMB_sync-tabs-menuitem {
+  list-style-image: url("chrome://browser/skin/menu-icons/monitor-smartphone.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#pageStyleMenu {
+  list-style-image: url("chrome://browser/skin/menu-icons/palette.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#viewSidebarMenuMenu {
+  list-style-image: url("chrome://browser/skin/menu-icons/panel-left.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#viewToolbarsMenu {
+  list-style-image: url("chrome://browser/skin/menu-icons/panel-top.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-media-pause {
+  list-style-image: url("chrome://browser/skin/menu-icons/pause.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#placesContext_rename\:bookmark {
+  list-style-image: url("chrome://browser/skin/menu-icons/pencil.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context_pinTab {
+  list-style-image: url("chrome://browser/skin/menu-icons/pin.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context_unpinTab {
+  list-style-image: url("chrome://browser/skin/menu-icons/pin-off.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-media-play,
+#context-ctp-play {
+  list-style-image: url("chrome://browser/skin/menu-icons/play.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_newNavigatorTab,
+#appmenu_newTab,
+#appmenu_newTab_popup {
+  list-style-image: url("chrome://browser/skin/menu-icons/plus.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_FileQuitItem,
+#appmenu-quit {
+  list-style-image: url("chrome://browser/skin/menu-icons/power.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_print,
+#appmenu_print,
+#appmenu_print_popup,
+#context-printframe {
+  list-style-image: url("chrome://browser/skin/menu-icons/printer.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_openAddons,
+#appmenu_addons {
+  list-style-image: url("chrome://browser/skin/menu-icons/puzzle.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_redo {
+  list-style-image: url("chrome://browser/skin/menu-icons/redo-2.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#sync-setup,
+#sync-syncnowitem {
+  list-style-image: url("chrome://browser/skin/menu-icons/refresh-cw.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-media-loop {
+  list-style-image: url("chrome://browser/skin/menu-icons/repeat.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_zoomReset,
+#historyRestoreLastSession {
+  list-style-image: url("chrome://browser/skin/menu-icons/rotate-ccw.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_restart,
+#menu_reload,
+#context-reload,
+#context-reloadframe,
+#context_reloadTab,
+#context_reloadAllTabs,
+#context-reloadimage,
+#placesContext_reload {
+  list-style-image: url("chrome://browser/skin/menu-icons/rotate-cw.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#subscribeToPageMenuitem,
+#subscribeToPageMenupopup,
+#appmenu_subscribeToPageMenu,
+#BMB_subscribeToPageMenuitem,
+#BMB_subscribeToPageMenupopup {
+  list-style-image: url("chrome://browser/skin/menu-icons/rss.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_savePage,
+#appmenu_savePage,
+#context-savepage,
+#context-saveimage,
+#context-savevideo,
+#context-saveaudio,
+#context-saveframe,
+#context-savelink {
+  list-style-image: url("chrome://browser/skin/menu-icons/save.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_cut,
+#context-cut,
+#placesContext_cut {
+  list-style-image: url("chrome://browser/skin/menu-icons/scissors.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_find,
+#appmenu_find,
+#menu_findAgain,
+#menu_search,
+#context-searchselect,
+#context-keywordfield {
+  list-style-image: url("chrome://browser/skin/menu-icons/search.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_preferences,
+#appmenu_preferences {
+  list-style-image: url("chrome://browser/skin/menu-icons/settings.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_openPermissions,
+#helpSafeMode {
+  list-style-image: url("chrome://browser/skin/menu-icons/shield.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_printSetup {
+  list-style-image: url("chrome://browser/skin/menu-icons/sliders-horizontal.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#spell-check-enabled {
+  list-style-image: url("chrome://browser/skin/menu-icons/spell-check.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#placesContext_open\:newtab,
+#context-openlinkintab,
+#context-openframeintab,
+#placesContext_openContainer\:tabs {
+  list-style-image: url("chrome://browser/skin/menu-icons/square-plus.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_bookmarkThisPage,
+#appmenu_bookmarkThisPage,
+#BMB_bookmarkThisPage,
+#context-bookmarkpage,
+#context-bookmarklink,
+#context-bookmarkframe {
+  list-style-image: url("chrome://browser/skin/menu-icons/star.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#troubleShooting {
+  list-style-image: url("chrome://browser/skin/menu-icons/stethoscope.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#javascriptConsole {
+  list-style-image: url("chrome://browser/skin/menu-icons/terminal.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_delete,
+#context-delete,
+#placesContext_delete,
+#placesContext_delete_history,
+#sanitizeItem,
+#appmenu_sanitizeHistory,
+#HMB_sanitizeItem,
+#placesContext_deleteBookmarks {
+  list-style-image: url("chrome://browser/skin/menu-icons/trash-2.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_undo,
+#context-undo,
+#context_undoCloseTab,
+#historyUndoMenu,
+#context-undo-add-to-dictionary {
+  list-style-image: url("chrome://browser/skin/menu-icons/undo-2.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_newPrivateWindow,
+#appmenu_newPrivateWindow,
+#appmenu_privateBrowsing,
+#placesContext_open\:newprivatewindow,
+#privateBrowsingItem,
+#context-openlinkprivate {
+  list-style-image: url("chrome://browser/skin/menu-icons/venetian-mask.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context-media-unmute {
+  list-style-image: url("chrome://browser/skin/menu-icons/volume-2.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#context_toggleMuteTab,
+#context-media-mute {
+  list-style-image: url("chrome://browser/skin/menu-icons/volume-x.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_customizeToolbars,
+#appmenu_customize {
+  list-style-image: url("chrome://browser/skin/menu-icons/wrench.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_close,
+#menu_stop,
+#context-stop,
+#context_closeOtherTabs,
+#context_closeTab,
+#context_closeTabsToTheEnd {
+  list-style-image: url("chrome://browser/skin/menu-icons/x.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#viewFullZoomMenu,
+#menu_zoomEnlarge {
+  list-style-image: url("chrome://browser/skin/menu-icons/zoom-in.svg") !important;
+  -moz-image-region: auto !important;
+}
+
+#menu_zoomReduce {
+  list-style-image: url("chrome://browser/skin/menu-icons/zoom-out.svg") !important;
+  -moz-image-region: auto !important;
+}
+

@@ -6,20 +6,20 @@
     g {
       fill: none;
       stroke: #fff;
-      stroke-width: 1.0325;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
     #darktext:target + g {
       stroke: #000;
-      stroke-width: 1;
     }
   </style>
   <g id="darktext"/>
-	<g>
-    <path d="M 5.25,3.25   l 6.034,7
-           M 12.75,3.25   l -6.25,7.25
-       M 6.5,10.5   a 2.75,1.25 -49.236 0,0 -3.602,4.156
-       a 2.75,1.25 -49.236 0,0 3.602,-4.156
-       M 11.234,10.25   a 3,1.25 49.236 0,0 3.930,4.534
-       a 3,1.25 49.236 0,0 -3.930,-4.534"/>
+  <g transform="scale(0.75)">
+    <circle cx="6" cy="6" r="3" />
+    <path d="M8.12 8.12 12 12" />
+    <path d="M20 4 8.12 15.88" />
+    <circle cx="6" cy="18" r="3" />
+    <path d="M14.8 14.8 20 20" />
   </g>
 </svg>

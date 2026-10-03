@@ -2,6 +2,7 @@
 @import url("chrome://os/skin/browser/statusbar/overlay.css");
 @import url("chrome://browser/skin/devtools.css");
 @import url("chrome://browser/skin/padlock/padlock.css");
+@import url("chrome://browser/skin/menuicons.css");
 @import url("chrome://global/skin/");
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
@@ -1597,14 +1598,14 @@ toolbar:not([brighttext]) .tabbrowser-arrowscrollbox > .scrollbutton-down {
 .tabs-newtab-button,
 #TabsToolbar > #new-tab-button,
 #TabsToolbar > toolbarpaletteitem > #new-tab-button {
-  list-style-image: url(chrome://browser/skin/toolbar/zoom-in.svg#dim);
-  -moz-image-region: rect(1px, 17px, 17px, 1px);
+  list-style-image: url(chrome://browser/skin/toolbar/new-tab.svg);
+  -moz-image-region: auto;
 }
 
 #TabsToolbar:not([brighttext]) .tabs-newtab-button,
 #TabsToolbar:not([brighttext]) > #new-tab-button,
 #TabsToolbar:not([brighttext]) > toolbarpaletteitem > #new-tab-button {
-  list-style-image: url(chrome://browser/skin/toolbar/zoom-in.svg#darktext);
+  list-style-image: url(chrome://browser/skin/toolbar/new-tab.svg#darktext);
 }
 
 .tabs-newtab-button {
