@@ -16,11 +16,11 @@ toolbarbutton:not(.toolbarbutton-1):not([disabled="true"]):not([type="menu-butto
 
 toolbarbutton:hover:active,
 toolbarbutton[open="true"] {
-  /* Neutraliza el desplazamiento de padding heredado de White Moon */
-  padding-top: 3px !important;
-  padding-bottom: 3px !important;
-  padding-inline-start: 3px !important;
-  padding-inline-end: 3px !important;
+  /* Mantiene el mismo padding que en reposo: evita el salto de tamaño/del bevel */
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-inline-start: 3px;
+  padding-inline-end: 3px;
 }
 
 toolbarbutton:not(.toolbarbutton-1):not([disabled="true"]):hover:active,

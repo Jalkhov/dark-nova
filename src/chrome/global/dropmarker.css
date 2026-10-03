@@ -1,17 +1,27 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+/* ===== dropmarker.css ========================================================
+  == Styles used by the XUL dropmarker element.
+  ======================================================================= */
+
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ::::: dropmarker ::::: */
+
 dropmarker {
   -moz-appearance: none;
   width: 16px;
   height: 16px;
   -moz-box-align: center;
   -moz-box-pack: center;
-  border: 1px solid;
-  -moz-border-top-colors: rgb(75,75,75);
-  -moz-border-right-colors: rgb(75,75,75);
-  -moz-border-bottom-colors: rgb(75,75,75);
-  -moz-border-left-colors: rgb(75,75,75);
+  border: 1px solid transparent;
+  border-radius: var(--nova-radius-xs);
   padding: 1px;
   list-style-image: url("chrome://global/skin/arrow/arrow-v.svg#dn");
   -moz-image-region: auto;
+  transition: background-color var(--nova-transition);
 }
 
 dropmarker > image {
@@ -19,13 +29,7 @@ dropmarker > image {
 }
 
 dropmarker:hover:active:not([disabled="true"]) {
-  background-color: rgb(110,110,110);
-  padding-top: 2px;
-  padding-bottom: 0px;
-  padding-inline-start: 2px;
-  padding-inline-end: 0px;
-  padding-inline-start: 2px;
-  padding-inline-end: 0px;
+  background-color: var(--nova-active);
 }
 
 dropmarker[disabled="true"] {

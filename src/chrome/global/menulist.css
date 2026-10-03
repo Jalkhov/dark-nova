@@ -1,1 +1,55 @@
 @import url("chrome://os/skin/global/menulist.css");
+
+/* ============================================================================
+   NOVA — Menulist (compartido: Linux, Windows y macOS)
+   ========================================================================== */
+
+menulist {
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-sm);
+  background-color: var(--nova-surface-2);
+  margin: 3px 6px;
+  transition: background-color var(--nova-transition), border-color var(--nova-transition);
+}
+
+menulist:hover {
+  background-color: var(--nova-surface-3);
+}
+
+menulist:hover:active,
+menulist[open="true"] {
+  background-color: var(--nova-surface-3);
+  border-color: var(--nova-border-strong);
+}
+
+menulist[disabled="true"],
+menulist[disabled="true"]:hover,
+menulist[disabled="true"]:hover:active {
+  background-color: var(--nova-surface);
+  color: GrayText;
+  opacity: .7;
+}
+
+.menulist-label-box {
+  margin: 1px;
+  border: none;
+  background-color: transparent;
+}
+
+.menulist-label {
+  margin: 3px 10px !important;
+}
+
+/* Flecha: algo de aire y sin desplazamiento al pulsar */
+
+menulist > .menulist-dropmarker {
+  border: none;
+  background: transparent;
+  margin: 0 !important;
+  padding: 0 6px;
+}
+
+menulist:hover:active > .menulist-dropmarker,
+menulist[open="true"] > .menulist-dropmarker {
+  padding: 0 6px;
+}
