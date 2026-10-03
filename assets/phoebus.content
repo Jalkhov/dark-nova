@@ -2,12 +2,14 @@ Dark Nova is a dark theme for [url=https://www.palemoon.org/]Pale Moon[/url] who
 [section]Features[/section]
 [ul]
   [li]Nova-inspired design language: rounded surfaces, softer interaction states and more breathing room across the browser chrome.[/li]
-  [li]Dark palette with a subtle cool tint and a customizable accent colour.[/li]
-  [li]Fully iconized menus with [url=https://lucide.dev/]Lucide[/url] line icons: the menu bar, the context menus and their submenus.[/li]
-  [li]Restyled tabs, address bar, bookmarks, menus, popups, autocomplete and find bar.[/li]
+  [li]Dark palette with a subtle cool tint and an accent colour that is easy to change.[/li]
+  [li]Fully iconized menus: the menu bar, the context menus and their submenus use [url=https://lucide.dev/]Lucide[/url] line icons.[/li]
+  [li]Restyled tabs, address bar, bookmarks, menus, popups, tooltips, autocomplete, find bar and new tab page.[/li]
 [/ul]
 [section]Compatibility[/section]
 Pale Moon 29.3.0 to 35.*.
+[section]Customization[/section]
+The accent colour, corner radii and surface colours are controlled by design tokens (variables named --nova-*) at the top of the theme's global stylesheet, so the look is easy to tweak.
 [section]Credits[/section]
 [ul]
   [li]Forked from Dark Moon by Lootyhoof, based on White Moon.[/li]
