@@ -10,70 +10,52 @@
 }
 
 #viewGroup > radio {
-  list-style-image: url("chrome://browser/skin/pageInfo.png");
   -moz-box-orient: vertical;
   -moz-box-align: center;
   -moz-appearance: none;
-  padding: 5px 3px 1px 3px;
+  color: var(--nova-text);
+  padding: 6px 4px 2px;
   margin: 0 1px;
   min-width: 4.5em;
+  border-radius: var(--nova-radius-sm);
+  transition: background-color var(--nova-transition), color var(--nova-transition);
 }
 
 #viewGroup > radio:hover {
-  background-color: rgb(75,75,75);
-  color: #fff;
+  background-color: var(--nova-surface-3);
+  color: var(--nova-text);
 }
 
 #viewGroup > radio[selected="true"] {
-  background-color: rgb(110,110,110);
-  color: #fff;
+  background-color: var(--nova-active);
+  color: var(--nova-text);
 }
 
 #topBar {
-  border-bottom: 1px solid rgb(75,75,75);
+  border-bottom: 1px solid var(--nova-border);
   padding-inline-start: 10px;
-  background-color: rgb(43,43,43);
-  color: #fff;
+  background-color: var(--nova-surface);
+  color: var(--nova-text);
 }
 
 #generalTab {
-  -moz-image-region: rect(0px, 32px, 32px, 0px)
-}
-
-#generalTab:hover, #generalTab[selected="true"] {
-  -moz-image-region: rect(32px, 32px, 64px, 0px)
+  list-style-image: url("chrome://browser/skin/nova-icons/info.svg");
 }
 
 #mediaTab {
-  -moz-image-region: rect(0px, 64px, 32px, 32px)
-}
-
-#mediaTab:hover, #mediaTab[selected="true"] {
-  -moz-image-region: rect(32px, 64px, 64px, 32px)
+  list-style-image: url("chrome://browser/skin/nova-icons/image.svg");
 }
 
 #feedTab {
-  -moz-image-region: rect(0px, 96px, 32px, 64px)
-}
-
-#feedTab:hover, #feedTab[selected="true"] {
-  -moz-image-region: rect(32px, 96px, 64px, 64px)
+  list-style-image: url("chrome://browser/skin/nova-icons/rss.svg");
 }
 
 #permTab {
-  -moz-image-region: rect(0px, 128px, 32px, 96px)
-}
-
-#permTab:hover, #permTab[selected="true"] {
-  -moz-image-region: rect(32px, 128px, 64px, 96px)
+  list-style-image: url("chrome://browser/skin/nova-icons/shield.svg");
 }
 
 #securityTab {
-  -moz-image-region: rect(0px, 160px, 32px, 128px)
-}
-
-#securityTab:hover, #securityTab[selected="true"] {
-  -moz-image-region: rect(32px, 160px, 64px, 128px)
+  list-style-image: url("chrome://browser/skin/nova-icons/shield-check.svg");
 }
 
 deck {
@@ -190,16 +172,18 @@ treechildren::-moz-tree-cell-text(broken) {
   padding-inline-start: 7px;
   padding-inline-end: 7px;
   min-height: 25px;
-  border-bottom: 1px dotted rgb(75,75,75);
+  border-bottom: 1px solid var(--nova-border);
 }
 
 #feedListbox richlistitem[selected="true"] {
-  background-color: rgb(110,110,110);
-  color: #fff;
+  background-color: var(--nova-surface-3);
+  color: var(--nova-text);
 }
 
 #feedListbox {
-  border: 1px solid rgb(75,75,75);
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-md);
+  background-color: var(--nova-surface);
 }
 
 .feedTitle { 
@@ -210,9 +194,10 @@ treechildren::-moz-tree-cell-text(broken) {
 #permList {
   margin-top: .5em;
   overflow: auto;
-  border: 1px solid rgb(75,75,75);
-  background-color: rgb(43,43,43);
-  color: #fff;
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-md);
+  background-color: var(--nova-surface);
+  color: var(--nova-text);
 }
 
 .permission {
@@ -221,16 +206,16 @@ treechildren::-moz-tree-cell-text(broken) {
   padding-inline-start: 7px;
   padding-inline-end: 7px;
   min-height: 25px;
-  border-bottom: 1px dotted rgb(75,75,75);
+  border-bottom: 1px solid var(--nova-border);
 }
 
 .permissionLabel {
   font-weight: bold;
-  color: #fff;
+  color: var(--nova-text);
 }
 
 .permission:hover {
-  background-color: rgb(75,75,75);
+  background-color: var(--nova-hover);
 }
 
 /* Security Tab */
