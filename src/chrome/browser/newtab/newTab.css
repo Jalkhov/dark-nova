@@ -299,3 +299,96 @@
   border-color: rgb(75, 75, 75);
   background-color: rgb(23, 23, 23);
 }
+
+/* ============================================================================
+   NOVA — Página de nueva pestaña
+   ========================================================================== */
+
+#newtab-vertical-margin {
+  background-color: var(--nova-window);
+}
+
+.newtab-cell {
+  background-color: var(--nova-surface);
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-lg);
+  transition: border-color var(--nova-transition),
+              background-color var(--nova-transition),
+              box-shadow var(--nova-transition);
+}
+
+.newtab-cell:empty {
+  border: 1px dashed var(--nova-border-strong);
+}
+
+.newtab-cell:hover:not(:empty) {
+  border-color: var(--nova-border-strong);
+  background-color: var(--nova-surface-2);
+}
+
+.newtab-site {
+  box-shadow: var(--nova-shadow-sm);
+  border-radius: var(--nova-radius-lg);
+}
+
+.newtab-site:hover {
+  box-shadow: var(--nova-shadow);
+}
+
+.newtab-site[dragged] {
+  background-color: var(--nova-surface-3);
+  box-shadow: var(--nova-shadow-lg);
+}
+
+.newtab-thumbnail {
+  border-radius: var(--nova-radius-lg) var(--nova-radius-lg) 0 0;
+}
+
+.newtab-title {
+  background-color: var(--nova-surface-2);
+  color: var(--nova-text);
+  border-radius: 0 0 var(--nova-radius-lg) var(--nova-radius-lg);
+}
+
+#newtab-undo-container {
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-md);
+  background-color: var(--nova-surface-2);
+  color: var(--nova-text);
+}
+
+#searchText {
+  color: var(--nova-text);
+  padding: 8px 12px;
+  background-color: var(--nova-surface-2);
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-md) 0 0 var(--nova-radius-md);
+}
+
+#searchText:-moz-dir(rtl) {
+  border-radius: 0 var(--nova-radius-md) var(--nova-radius-md) 0;
+}
+
+#searchText:focus,
+#searchText[autofocus] {
+  border-color: var(--nova-accent);
+  box-shadow: 0 0 0 2px var(--nova-focus);
+}
+
+#searchSubmit {
+  color: var(--nova-text);
+  background-color: var(--nova-surface-3);
+  border: 1px solid var(--nova-border);
+  border-radius: 0 var(--nova-radius-md) var(--nova-radius-md) 0;
+}
+
+#searchSubmit:-moz-dir(rtl) {
+  border-radius: var(--nova-radius-md) 0 0 var(--nova-radius-md);
+}
+
+#searchText:focus + #searchSubmit,
+#searchText + #searchSubmit:hover,
+#searchText[autofocus] + #searchSubmit {
+  border-color: var(--nova-accent);
+  background-color: var(--nova-surface-4);
+}
