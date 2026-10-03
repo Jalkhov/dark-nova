@@ -932,7 +932,7 @@ html|*.urlbar-input:-moz-lwtheme:-moz-placeholder,
 }
 
 .urlbar-history-dropmarker:not(:hover):not(:active):not([open="true"]) {
-  opacity: 0.15;
+  opacity: 0.55;
 }
 
 .urlbar-history-dropmarker:active,

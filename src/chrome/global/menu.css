@@ -43,3 +43,21 @@ menuseparator {
 .menu-iconic-left {
   padding-inline-end: 8px !important;
 }
+
+/* ::::: flecha de submenú ::::: */
+
+.menu-right {
+  list-style-image: url("chrome://global/skin/arrow/arrow-h.svg#rit");
+  width: 12px;
+  height: 12px;
+  margin-inline-start: 10px;
+  margin-inline-end: 4px;
+}
+
+.menu-right > image {
+  width: 12px;
+}
+
+.menu-right:-moz-locale-dir(rtl) {
+  list-style-image: url("chrome://global/skin/arrow/arrow-h.svg#lft");
+}

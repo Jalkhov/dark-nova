@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     x="0"
-     y="0"
-     width="5"
-     height="3"
-     viewBox="0 0 5 3">
+     x="0" y="0"
+     width="12"
+     height="8"
+     viewBox="0 0 12 8">
   <style>
     .t {
-      fill: #fff;
+      fill: none;
+      stroke: #fff;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
-    .t:not(:target){
+    .t:not(:target) {
       display: none;
     }
     [id$=dis] {
       opacity: .4;
     }
   </style>
-	<g id="dn" class="t">
-    <path class="main" d="M4.8,0l-2.3,2.65l-2.3-2.65z"/>
-	</g>
-	<g id="dn-dis" class="t">
-    <path class="main" d="M4.8,0l-2.3,2.65l-2.3-2.65z"/>
-	</g>
-	<g id="up" class="t">
-    <path class="main" d="M.2,3l2.3-2.65l2.3,2.65z"/>
-	</g>
-	<g id="up-dis" class="t">
-    <path class="main" d="M.2,3l2.3-2.65l2.3,2.65z"/>
-	</g>
+  <g id="dn" class="t">
+    <path class="main" d="M2 2.5 6 6.5 10 2.5"/>
+  </g>
+  <g id="dn-dis" class="t">
+    <path class="main" d="M2 2.5 6 6.5 10 2.5"/>
+  </g>
+  <g id="up" class="t">
+    <path class="main" d="M2 6.5 6 2.5 10 6.5"/>
+  </g>
+  <g id="up-dis" class="t">
+    <path class="main" d="M2 6.5 6 2.5 10 6.5"/>
+  </g>
 </svg>
