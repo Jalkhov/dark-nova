@@ -1,5 +1,15 @@
 # Changelog
 
+### Unreleased
+- theme the Developer Tools with the Nova palette and enable their dark theme by default
+- Nova styling for the DevTools settings and controls (checkboxes, radios, selects, inputs, tabs)
+- fix clipped labels in DevTools toolbars and the Network column headers
+- dark, rounded, thin scrollbars
+- align button and menulist heights and equalize the address and search bar heights
+- Nova styling for in-content pages (`about:permissions`) and the Page Info window
+- replace the remaining `places.svg` sprites with Lucide icons
+- note: only tested on Linux with the GTK3 build of Pale Moon so far
+
 ### 3.1.0
 - add Lucide icons to the browser menus, being now fully iconized
 - iconize the File, Edit, View, History, Bookmarks, Tools and Help menus
