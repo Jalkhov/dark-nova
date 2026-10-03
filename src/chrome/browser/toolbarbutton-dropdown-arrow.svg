@@ -2,14 +2,18 @@
 <svg width="9" height="7" version="1.1" viewBox="0 0 9 7" xmlns="http://www.w3.org/2000/svg">
   <style>
     g {
-      fill: #fff;
+      fill: none;
+      stroke: #fff;
+      stroke-width: 1.15;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
     #darktext:target + g {
-      fill: #000;
+      stroke: #000;
     }
   </style>
   <g id="darktext"/>
   <g>
-    <polygon points="1,1 8,1 4.5,5"/>
+    <path d="M2 2.25 4.5 4.75 7 2.25"/>
   </g>
 </svg>

@@ -6,6 +6,9 @@
      width="16"
      height="16"
      viewBox="0 0 16 16">
-  <circle cx="9" cy="7" r="4.5" stroke-width="1" stroke="#fff" fill="none"/>
-  <line x1="5.8" y1="10.2" x2="2" y2="14" stroke-width="1" stroke="#fff"/>
+  <g transform="scale(0.6667)" fill="none" stroke="#fff" stroke-width="2.2"
+     stroke-linecap="round" stroke-linejoin="round">
+    <path d="m21 21-4.34-4.34"/>
+    <circle cx="11" cy="11" r="8"/>
+  </g>
 </svg>

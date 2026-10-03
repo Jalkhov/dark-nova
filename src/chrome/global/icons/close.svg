@@ -14,8 +14,8 @@
   </style>
   <defs>
     <g id="x-shape">
-      <line x1="5" y1="5" x2="11" y2="11" stroke-width="0.757" stroke="#fff"/>
-      <line x1="5" y1="11" x2="11" y2="5" stroke-width="0.757" stroke="#fff"/>
+      <line x1="5.5" y1="5.5" x2="10.5" y2="10.5" stroke-width="1.1" stroke="#fff" stroke-linecap="round"/>
+      <line x1="5.5" y1="10.5" x2="10.5" y2="5.5" stroke-width="1.1" stroke="#fff" stroke-linecap="round"/>
     </g>
     <g id="hover-circle-shape">
       <circle cx="8" cy="8" r="5.62" stroke-width="1" stroke="#fff" fill="none" opacity="0.54"/>

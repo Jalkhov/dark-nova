@@ -3,8 +3,10 @@
      xmlns:xlink="http://www.w3.org/1999/xlink"
      x="0" y="0" width="378" height="36" viewBox="0 0 378 36">
   <style>
-    use {
+    g {
       fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
     use[id="darktext"]:not(:target),
     use[id="toolbar"]:not(:target) {
@@ -12,106 +14,141 @@
     }
     use[id="toolbar"] {
       stroke: #fff;
-      stroke-width: 1.0325;
     }
     use[id="darktext"] {
       stroke: #000;
-      stroke-width: 1;
     }
   </style>
   <defs style="display: none;">
-    <g id="back-shape">
-      <path d="M 12.5,1.5   l -7,7   l 7,7"/>
+    <!-- Lucide: arrow-left -->
+    <g id="back-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="m12 19-7-7 7-7"/>
+      <path d="M19 12H5"/>
     </g>
-    <g id="forward-shape">
-      <path d="M 5.5,1.5   l 7,7   l -7,7"/>
+    <!-- Lucide: arrow-right -->
+    <g id="forward-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M5 12h14"/>
+      <path d="m12 5 7 7-7 7"/>
     </g>
-    <g id="reload-shape">
-      <path d="M 9.5,9.5   m 3,-5.196   a 6,6 0 1,0 2.916,6.196"/>
-      <path d="M 9,4.627 h 4 v -4"  transform="rotate(-25,13,4.627)"/>
+    <!-- Lucide: rotate-cw -->
+    <g id="reload-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"/>
+      <path d="M21 3v5h-5"/>
     </g>
-    <g id="stop-shape">
-      <line x1="3" y1="3" x2="15" y2="15"/>
-      <line x1="3" y1="15" x2="15" y2="3"/>
+    <!-- Lucide: x -->
+    <g id="stop-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M18 6 6 18"/>
+      <path d="m6 6 12 12"/>
     </g>
-    <g id="home-shape">
-      <path d="M 4.5,15.5   h 9   v -7   h 1.9   l -6.4,-6.4   l -6.4,6.4   h 1.9   v 7   Z"/>
-      <path d="M 9.5,11.5   h 2   v -2   h -2   v 2   Z"/>
+    <!-- Lucide: house -->
+    <g id="home-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/>
+      <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
     </g>
-    <g id="downloads-shape">
-      <rect x="2.5" y="11.5" width="12" height="4"  rx="1.4" ry="1.4"/>
-      <path d="M 10,13.5   h2"/>
-      <path d="M 8.5,2   v7.5   m -3.5,-3.5   l 3.5,3.5   l 3.5,-3.5"/>
+    <!-- Lucide: download -->
+    <g id="downloads-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M12 15V3"/>
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+      <path d="m7 10 5 5 5-5"/>
     </g>
-    <g id="history-shape">
-      <circle cx="9" cy="9" r="6.6"/>
-      <path d="M 7.5,4   l 1,5.5   l 4.5,1"/>
+    <!-- Lucide: history -->
+    <g id="history-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+      <path d="M3 3v5h5"/>
+      <path d="M12 7v5l4 2"/>
     </g>
-    <g id="bookmarks-shape">
-      <path d="M 2.5,5   c .7,-2.2 6.3,-2.2 7,0   c .7,-2.2 6.3,-2.2 7,0   l 0,10   c -.7,-2.2 -6.3,-2.2 -7,0   v-10   v10   c -.7,-2.2 -6.3,-2.2 -7,0   l 0,-10   z"/>
+    <!-- Lucide: library -->
+    <g id="bookmarks-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="m16 6 4 14"/>
+      <path d="M12 6v14"/>
+      <path d="M8 8v12"/>
+      <path d="M4 4v16"/>
     </g>
-    <g id="new-tab-shape">
-      <path d="M 2.5,15.5   h 14   v -9.7   a 2.3,2.3 0 0,0 -2.3,-2.3   h -9.4   a 2.3,2.3 0 0,0 -2.3,2.3   v 9.7   Z    
-               M 9.5,6   v 7   M 6,9.5   h 7"/>
+    <!-- Lucide: plus -->
+    <g id="new-tab-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M5 12h14"/>
+      <path d="M12 5v14"/>
     </g>
-    <g id="new-window-shape">
-      <rect x="1.5" y="2.5" width="15" height="13" rx="1.4" ry="1.4"/>
-      <rect x="14.5" y="3.5" width="0.001" height="0.001"/>
-      <path d="M 1.5,5.5   h 15"/>
+    <!-- Lucide: app-window -->
+    <g id="new-window-shape" transform="scale(0.75)" stroke-width="2">
+      <rect x="2" y="4" width="20" height="16" rx="2"/>
+      <path d="M10 4v4"/>
+      <path d="M2 8h20"/>
+      <path d="M6 4v4"/>
     </g>
-    <g id="print-shape">
-      <path d="M 3.5,13.5   h -.6   a 1.4,1.4 0 0,1 -1.4,-1.4   v -4.2   a 1.4,1.4 0 0,1 1.4,-1.4   h 12.2   a 1.4,1.4 0 0,1 1.4,1.4   v 4.2   a 1.4,1.4 0 0,1 -1.4,1.4   h-.6"/>
-      <path d="M 4.5,12.5   l -1,3   h 11   l -1,-3   h -9   Z"/>
-      <path d="M 4.5,6.5   v -4     h 9   v 4"/>
-      <rect x="13.5" y="8.5" width=".001" height=".001"/>
+    <!-- Lucide: printer -->
+    <g id="print-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+      <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"/>
+      <rect x="6" y="14" width="12" height="8" rx="1"/>
     </g>
-    <g id="cut-shape">
-      <path d="M 5.25,3.25   l 6.034,7
-             M 12.75,3.25   l -6.25,7.25
-         M 6.5,10.5   a 2.75,1.25 -49.236 0,0 -3.602,4.156
-         a 2.75,1.25 -49.236 0,0 3.602,-4.156
-         M 11.234,10.25   a 3,1.25 49.236 0,0 3.930,4.534
-         a 3,1.25 49.236 0,0 -3.930,-4.534"/>
+    <!-- Lucide: scissors -->
+    <g id="cut-shape" transform="scale(0.75)" stroke-width="2">
+      <circle cx="6" cy="6" r="3"/>
+      <path d="M8.12 8.12 12 12"/>
+      <path d="M20 4 8.12 15.88"/>
+      <circle cx="6" cy="18" r="3"/>
+      <path d="M14.8 14.8 20 20"/>
     </g>
-    <g id="copy-shape">
-      <path d="M 8.5,11.5   h -6   v -9   h 4.3   l 2.7,2.7   v 1.3   m 0,-1   h -3  v -3
-               M 12.8,6.5   h -4.3   v 9   h 7   v -6.3   l -2.7,-2.7   z   m -0.3,0   v 3   h 3"/>
+    <!-- Lucide: copy -->
+    <g id="copy-shape" transform="scale(0.75)" stroke-width="2">
+      <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/>
+      <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
     </g>
-    <g id="paste-shape">
-      <path d="M 7.5,13.5   h -3   a 1,1 0 0,1 -1,-1   v -8   a 1,1 0 0,1 1,-1   h 1   m 5,0   h 1   a 1,1 0 0,1 1,1   v 3
-         M 6,2.5   h 4   a .5,.5 0 0,1 .5,.5   v 2   a .5,.5 0 0,1 -.5,.5   h -4   a .5,.5 0 0,1 -.5,-.5   v -2   a .5,.5 0 0,1 .5,-.5   z
-             M 11.8,6.5   h -4.3   v 9   h 7   v -6.3   l -2.7,-2.7   z   m -0.3,0   v 3   h 3"/>
+    <!-- Lucide: clipboard-paste -->
+    <g id="paste-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M11 14h10"/>
+      <path d="M16 4h2a2 2 0 0 1 2 2v1.344"/>
+      <path d="m17 18 4-4-4-4"/>
+      <path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 1.793-1.113"/>
+      <rect x="8" y="2" width="8" height="4" rx="1"/>
     </g>
-    <g id="fullscreen-shape">
-      <path d="M 1.5,2.5   h 5.5   m 4,0   h 5.5   v 4.5   m 0,4   v 4.5   h -5.5   m -4,0   h -5.5   v -4.5   m 0,-4   v -4.5   h 2"/>
-      <rect x="3.5" y="4.5" width="11" height="9" rx="1.5" ry="1.5"/>
+    <!-- Lucide: maximize -->
+    <g id="fullscreen-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M8 3H5a2 2 0 0 0-2 2v3"/>
+      <path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
+      <path d="M3 16v3a2 2 0 0 0 2 2h3"/>
+      <path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
     </g>
-    <g id="zoom-out-shape">
-      <path d="M 4,8.5   h 9"/>
+    <!-- Lucide: zoom-out -->
+    <g id="zoom-out-shape" transform="scale(0.75)" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/>
+      <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+      <line x1="8" x2="14" y1="11" y2="11"/>
     </g>
-    <g id="zoom-in-shape">
-      <path d="M 4,8.5   h 9   m -4.5 -4.5   v 9"/>
+    <!-- Lucide: zoom-in -->
+    <g id="zoom-in-shape" transform="scale(0.75)" stroke-width="2">
+      <circle cx="11" cy="11" r="8"/>
+      <line x1="21" x2="16.65" y1="21" y2="16.65"/>
+      <line x1="11" x2="11" y1="8" y2="14"/>
+      <line x1="8" x2="14" y1="11" y2="11"/>
     </g>
-    <g id="sync-shape">
-      <path  d="M 10,11   v 3.5   h 3.5"  transform="rotate(20,10,14.5)"/>
-      <path  d="M 3.5,3.5   h 3.5   v 3.5"  transform="rotate(20,7,3.5)"/>
-      <path  d="M 7,3.5   a 7,6 0 0,0 -1,11
-                M 11,4   a 8,6 0 0,1 -1,10.5"/>
+    <!-- Lucide: refresh-cw -->
+    <g id="sync-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+      <path d="M21 3v5h-5"/>
+      <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+      <path d="M8 16H3v5"/>
     </g>
-    <g id="feed-shape">
-      <circle cx="3.5" cy="14.5" r="1"/>
-      <path  d="M 2,3.5   a 12.5,12.5 0 0,1 12.5,12.5   M 2,8.5   a 7.5,7.5 0 0,1 7.5,7.5"/>
+    <!-- Lucide: rss -->
+    <g id="feed-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M4 11a9 9 0 0 1 9 9"/>
+      <path d="M4 4a16 16 0 0 1 16 16"/>
+      <circle cx="5" cy="19" r="1"/>
     </g>
-    <g id="webrtc-shape">
-      <path d="M 11.5,8   l 4,-3   v 8   l -4,-3"/>
-      <rect x="2.5" y="4.5" width="9" height="9" rx="1.4" ry="1.4"/>
+    <!-- Lucide: video -->
+    <g id="webrtc-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/>
+      <rect x="2" y="6" width="14" height="12" rx="2"/>
     </g>
-    <g id="bookmark-shape">
-      <path d="M 5.5,15   l 4,-3.5   l 4,3.5   v -10.1   a 1.4,1.4 0 0,0 -1.4,-1.4   h -5.2   a 1.4,1.4 0 0,0 -1.4,1.4   v 10.1   Z"/>
+    <!-- Lucide: star -->
+    <g id="bookmark-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
     </g>
-    <g id="bookmarked-shape">
-      <path d="M 5.5,15   l 4,-3.5   l 4,3.5   v -10.1   a 1.4,1.4 0 0,0 -1.4,-1.4   h -5.2   a 1.4,1.4 0 0,0 -1.4,1.4   v 10.1   Z"/>
-      <path d="M 2,5.5   h 3   m 9,0   h 3"/>
+    <!-- Lucide: bookmark-check -->
+    <g id="bookmarked-shape" transform="scale(0.75)" stroke-width="2">
+      <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/>
+      <path d="m9 10 2 2 4-4"/>
     </g>
     <g id="toolbar-shape">
       <use x="0" xlink:href="#back-shape"/>

@@ -7,39 +7,27 @@
      height="17"
      viewBox="0 0 15 17">
   <style>
-    .t:not(:target){
+    .t:not(:target) {
       display: none;
     }
     use {
-      stroke-width: 0;
-      fill: #e5e5e5;
+      fill: none;
+      stroke: #e5e5e5;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
     g[id$="inverted"] use {
-      fill: #333;
-    }
-    g .glow {
-      stroke-width: 0;
-      fill: #fff;
-      filter: url(#blur-filter);
-      opacity: .28;
-    }
-    g[id$="inverted"] .glow {
-      fill: #000;
+      stroke: #333;
     }
   </style>
   <defs>
-    <filter id="blur-filter">
-      <feGaussianBlur stdDeviation=".5"/>
-    </filter>
-    <path id="left-shape" d="M 10,5   v 8   l -6,-4   l 6,-4   z"/>
-    <path id="left-glow-shape" d="M 10.7,5   v 8   l -1.1,.9  l -6.4,-4.9   l 6.4,-4.9   l 1.1,.9   z"/>
+    <path id="left-shape" d="M10.5 4.5 5 8.5 10.5 12.5"/>
   </defs>
-	<g id="left" class="t">
-    <use xlink:href="#left-glow-shape" class="glow"/>
+  <g id="left" class="t">
     <use xlink:href="#left-shape"/>
-	</g>
-	<g id="left-inverted" class="t">
-    <use xlink:href="#left-glow-shape" class="glow"/>
+  </g>
+  <g id="left-inverted" class="t">
     <use xlink:href="#left-shape"/>
-	</g>
+  </g>
 </svg>
