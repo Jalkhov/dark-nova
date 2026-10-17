@@ -1,6 +1,7 @@
 # Changelog
 
-### Unreleased
+### 3.2.0
+- ship a `THIRD_PARTY_NOTICES` file with the Lucide ISC license, as required by its terms
 - theme the Developer Tools with the Nova palette and enable their dark theme by default
 - Nova styling for the DevTools settings and controls (checkboxes, radios, selects, inputs, tabs)
 - fix clipped labels in DevTools toolbars and the Network column headers
