@@ -290,6 +290,28 @@
   margin-inline-end: 16px;
 }
 
+/* Lucide icons for the utilities menu */
+#utils-menu > menuitem:not([type="checkbox"]):not([type="radio"]) {
+  -moz-binding: url("chrome://global/content/bindings/menu.xml#menuitem-iconic");
+}
+
+#utils-updateNow {
+  list-style-image: url("chrome://browser/skin/menu-icons/refresh-cw.svg");
+}
+
+#utils-viewUpdates {
+  list-style-image: url("chrome://browser/skin/menu-icons/history.svg");
+}
+
+#utils-installFromFile {
+  list-style-image: url("chrome://browser/skin/menu-icons/file-plus.svg");
+}
+
+#utils-resetAddonUpdatesToAutomatic,
+#utils-resetAddonUpdatesToManual {
+  list-style-image: url("chrome://browser/skin/menu-icons/rotate-ccw.svg");
+}
+
 .view-header {
   background-color: rgb(110,110,110);
   padding: 4px;
