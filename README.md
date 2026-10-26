@@ -12,8 +12,8 @@ Forked from [Dark Moon](https://github.com/Lootyhoof/darkmoon), which is based o
 - Nova-inspired design language: rounded surfaces, softer interaction states and more breathing room.
 - Dark palette with a subtle cool tint and a customizable accent colour.
 - [Lucide](https://lucide.dev/) line icons across the toolbar, menus, trees and browser chrome.
-- Dark Developer Tools (opt-in via the shipped default pref).
-- Restyled tabs, address bar, bookmarks, menus, popups, autocomplete, find bar, scrollbars and in-content pages.
+- Dark Developer Tools, enabled by default.
+- Restyled tabs, address bar, bookmarks, menus, popups, autocomplete, find bar, scrollbars, in-content pages, Page Info and the Permissions Manager.
 
 ## TODO / known issues
 
@@ -31,4 +31,8 @@ On Unix systems (or Windows 10, with [WSL](https://docs.microsoft.com/en-us/wind
 
 ## Download
 
-You can grab the latest release from the Releases section of this repository.
+Dark Nova is available from the official Pale Moon Add-ons site:
+
+- **https://addons.palemoon.org/addon/dark-nova/**
+
+You can also grab the latest release from the Releases section of this repository.
