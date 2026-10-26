@@ -22,6 +22,7 @@ These areas are not fully styled yet and are tracked here for future work:
 - **Developer Tools (F12)** — the palette and most controls follow Nova; a few panels (Debugger, Style Editor, Storage) and the Browser Toolbox may still need detail work.
 - **Platforms** — verified on **Linux / GTK3** and on **Windows 11** (by [Lootyhoof](https://github.com/Lootyhoof)); macOS still needs testing.
 - **Misc assets** — a few remaining dialogs/notifications may still use inherited artwork.
+- **About Pale Moon window** (`about:`) — the three bottom links (End-user rights, Licensing information, Release notes) still use native link styling; restyle them as Nova buttons. The artwork and header are left untouched on purpose.
 
 ## Building
 
