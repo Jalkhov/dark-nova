@@ -1106,13 +1106,15 @@ button.button-link:not([disabled="true"]):active:hover {
 
 .header-button {
   -moz-appearance: none;
-  padding: 1px 3px;
-  color: #444;
-  text-shadow: 0 0 3px white;
+  padding: 5px 7px;
+  color: var(--nova-text);
+  text-shadow: none;
   background: transparent;
   background-clip: padding-box;
-  border-radius: 2.5px;
+  border-radius: var(--nova-radius-sm);
   border: 1px solid transparent;
+  transition: background-color var(--nova-transition),
+              border-color var(--nova-transition);
 }
 
 .header-button[disabled="true"] {
@@ -1123,9 +1125,11 @@ button.button-link:not([disabled="true"]):active:hover {
   opacity: 0.4;
 }
 
+.header-button:not([disabled="true"]):hover,
 .header-button:not([disabled="true"]):active:hover,
 .header-button[open="true"] {
-  background: rgb(110,110,110);
+  background-color: var(--nova-surface-3);
+  border-color: var(--nova-border);
 }
 
 .header-button > .toolbarbutton-text {
