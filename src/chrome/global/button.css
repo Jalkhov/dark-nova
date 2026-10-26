@@ -205,6 +205,14 @@ button[disabled="true"] {
   opacity: .6;
 }
 
+/* The spinbutton arrows are buttons too, but they must stay compact */
+button.spinbuttons-button {
+  min-width: 15px;
+  min-height: 12px;
+  padding: 0;
+  border-radius: var(--nova-radius-xs);
+}
+
 /* Botones que no llevan el estilo de diálogo */
 button[type="menu-button"],
 button[type="disclosure"],
