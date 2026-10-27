@@ -12,6 +12,7 @@
 
 prefwindow {
   padding: 0px;
+  background-color: var(--nova-window);
 }
 
 prefpane {
@@ -19,6 +20,7 @@ prefpane {
   padding-bottom: 10px;
   padding-inline-start: 8px;
   padding-inline-end: 10px;
+  background-color: var(--nova-window);
 }
 
 prefwindow[type="child"] {
@@ -44,17 +46,19 @@ prefwindow[type="child"] .prefWindow-dlgbuttons {
 
 radio[pane] {
   -moz-appearance: none;
-  margin: 0px 1px 0px 1px;
-  padding: 1px 3px 1px 3px;
+  margin: 0 2px;
+  padding: 4px 8px;
   min-width: 4.5em;
+  border-radius: var(--nova-radius-sm);
+  color: var(--nova-text);
 }
 
 .paneSelector {
-  border-bottom: 1px solid rgb(75,75,75);
+  border-bottom: 1px solid var(--nova-border);
   margin: 0px;
   padding-inline-start: 10px;
-  background-color: rgb(43,43,43);
-  color: #fff;
+  background-color: var(--nova-surface);
+  color: var(--nova-text);
 }
 
 .paneButtonIcon {
@@ -63,14 +67,13 @@ radio[pane] {
 }
 
 radio[pane]:hover {
-  background-color: rgb(75,75,75);
-  color: #fff;
-  -moz-appearance: none;
+  background-color: var(--nova-surface-3);
+  color: var(--nova-text);
 }
 
 radio[pane][selected="true"] {
-  background-color: rgb(110,110,110);
-  color: #fff; 
+  background-color: var(--nova-surface-4);
+  color: var(--nova-text);
   -moz-appearance: none;
 }
 
