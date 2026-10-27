@@ -5,6 +5,7 @@
 - keep the spinbutton arrows compact and give the numberbox values some breathing room
 - restyle the preferences windows (pane selector, group boxes and captions) with Nova tokens
 - restyle the About Pale Moon window links as Nova buttons
+- fix the unreadable native-blue links in the preferences and update windows
 
 ### 3.2.0
 - ship a `THIRD_PARTY_NOTICES` file with the Lucide ISC license, as required by its terms

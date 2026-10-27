@@ -47,11 +47,12 @@ wizardpage {
 }
 
 .inline-link {
-  color: -moz-nativehyperlinktext;
+  color: var(--nova-accent-strong);
   text-decoration: none;
 }
 
 .inline-link:hover {
+  color: var(--nova-text);
   text-decoration: underline;
 }
 
