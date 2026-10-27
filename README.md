@@ -13,7 +13,7 @@ Forked from [Dark Moon](https://github.com/Lootyhoof/darkmoon), which is based o
 - Dark palette with a subtle cool tint and a customizable accent colour.
 - [Lucide](https://lucide.dev/) line icons across the toolbar, menus, trees and browser chrome.
 - Dark Developer Tools, enabled by default.
-- Restyled tabs, address bar, bookmarks, menus, popups, autocomplete, find bar, scrollbars, in-content pages, Page Info and the Permissions Manager.
+- Restyled tabs, address bar, bookmarks, menus, popups, autocomplete, find bar, scrollbars, in-content pages, Page Info, the Permissions Manager, the add-ons manager and the preferences windows.
 
 ## TODO / known issues
 
@@ -21,8 +21,8 @@ These areas are not fully styled yet and are tracked here for future work:
 
 - **Developer Tools (F12)** — the palette and most controls follow Nova; a few panels (Debugger, Style Editor, Storage) and the Browser Toolbox may still need detail work.
 - **Platforms** — verified on **Linux / GTK3** and on **Windows 11** (by [Lootyhoof](https://github.com/Lootyhoof)); macOS still needs testing.
-- **Misc assets** — a few remaining dialogs/notifications may still use inherited artwork.
 - **About Pale Moon window** (`about:`) — the three bottom links (End-user rights, Licensing information, Release notes) still use native link styling; restyle them as Nova buttons. The artwork and header are left untouched on purpose.
+- **File picker and dialog icons** — the file picker and a few dialogs still use inherited raster artwork instead of Lucide icons.
 
 ## Building
 

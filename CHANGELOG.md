@@ -1,5 +1,10 @@
 # Changelog
 
+### Unreleased
+- add Lucide icons to the add-ons manager utilities menu and restyle its header button
+- keep the spinbutton arrows compact and give the numberbox values some breathing room
+- restyle the preferences windows (pane selector, group boxes and captions) with Nova tokens
+
 ### 3.2.0
 - ship a `THIRD_PARTY_NOTICES` file with the Lucide ISC license, as required by its terms
 - theme the Developer Tools with the Nova palette and enable their dark theme by default
