@@ -11,7 +11,7 @@ Forked from [Dark Moon](https://github.com/Lootyhoof/darkmoon), which is based o
 
 - Nova-inspired design language: rounded surfaces, softer interaction states and more breathing room.
 - Dark palette with a subtle cool tint and a customizable accent colour.
-- [Lucide](https://lucide.dev/) line icons across the toolbar, menus, trees and browser chrome.
+- [Lucide](https://lucide.dev/) line icons across the toolbar, menus, context menus, trees and browser chrome.
 - Dark Developer Tools, enabled by default.
 - Restyled tabs, address bar, bookmarks, menus, popups, autocomplete, find bar, scrollbars, in-content pages, Page Info, the Permissions Manager, the add-ons manager, the preferences windows and the About window.
 
