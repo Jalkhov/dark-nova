@@ -6,6 +6,7 @@
 - restyle the preferences windows (pane selector, group boxes and captions) with Nova tokens
 - restyle the About Pale Moon window links as Nova buttons
 - add an icon to the Status Bar Preferences menu item
+- add an icon to the Inspect Element context menu item
 - fix the unreadable native-blue links in the preferences and update windows
 
 ### 3.2.0

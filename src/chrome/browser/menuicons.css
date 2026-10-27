@@ -446,6 +446,7 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
   -moz-image-region: auto !important;
 }
 
+#context-inspect,
 #menuitem_inspector,
 #appmenuitem_inspector {
   list-style-image: url("chrome://browser/skin/menu-icons/search-code.svg") !important;
