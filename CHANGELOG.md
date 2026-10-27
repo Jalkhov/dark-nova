@@ -1,14 +1,14 @@
 # Changelog
 
-### Unreleased
-- add Lucide icons to the add-ons manager utilities menu and restyle its header button
-- keep the spinbutton arrows compact and give the numberbox values some breathing room
-- restyle the preferences windows (pane selector, group boxes and captions) with Nova tokens
+### 3.3.0
+- restyle the preferences windows with Nova tokens (pane selector, group boxes and captions)
 - restyle the About Pale Moon window links as Nova buttons
+- add Lucide icons to the add-ons manager utilities menu and restyle its header button
+- add icons to the Character Encoding and Customize menu items
 - add an icon to the Status Bar Preferences menu item
 - add an icon to the Inspect Element context menu item
 - remove the extra dotted focus border on buttons
-- add icons to the Character Encoding menu and the Customize toolbar item
+- keep the spinbutton arrows compact and give the numberbox values some breathing room
 - fix the unreadable native-blue links in the preferences and update windows
 - separate the bookmarks folder caret from its label
 
