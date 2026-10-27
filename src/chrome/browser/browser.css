@@ -318,6 +318,10 @@ menuitem.bookmark-item {
   -moz-image-region: auto;
 }
 
+.bookmark-item > .toolbarbutton-menu-dropmarker {
+  margin-inline-start: 6px;
+}
+
 .bookmark-item[container] { list-style-image: url("chrome://browser/skin/nova-icons/folder.svg");
   -moz-image-region: auto;
 }

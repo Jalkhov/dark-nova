@@ -10,6 +10,7 @@
 - remove the extra dotted focus border on buttons
 - add icons to the Character Encoding menu and the Customize toolbar item
 - fix the unreadable native-blue links in the preferences and update windows
+- separate the bookmarks folder caret from its label
 
 ### 3.2.0
 - ship a `THIRD_PARTY_NOTICES` file with the Lucide ISC license, as required by its terms
