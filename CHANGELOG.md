@@ -8,6 +8,7 @@
 - add an icon to the Status Bar Preferences menu item
 - add an icon to the Inspect Element context menu item
 - remove the extra dotted focus border on buttons
+- add icons to the Character Encoding menu and the Customize toolbar item
 - fix the unreadable native-blue links in the preferences and update windows
 
 ### 3.2.0

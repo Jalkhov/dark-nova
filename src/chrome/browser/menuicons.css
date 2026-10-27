@@ -215,6 +215,7 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
 }
 
 #view_charsetMenu,
+menu[id$="charsetMenu"],
 #spell-dictionaries-menu {
   list-style-image: url("chrome://browser/skin/menu-icons/languages.svg") !important;
   -moz-image-region: auto !important;
@@ -569,6 +570,7 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
 
 #menu_customizeToolbars,
 #appmenu_customize,
+#toolbar-context-menu > menuitem[command="cmd_CustomizeToolbars"],
 #menu_devToolbox,
 #appmenu_devToolbox {
   list-style-image: url("chrome://browser/skin/menu-icons/wrench.svg") !important;
