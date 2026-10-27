@@ -40,16 +40,7 @@ button {
 
 /* .......... focused state .......... */
 
-button:focus {
-  -moz-border-top-colors: rgb(110,110,110);
-  -moz-border-right-colors: rgb(110,110,110);
-  -moz-border-bottom-colors: rgb(110,110,110);
-  -moz-border-left-colors: rgb(110,110,110);
-}
-
-button:-moz-focusring > .button-box {
-  border: 1px dotted rgb(110,110,110);
-}
+/* The accent border plus the outer ring already show focus; no inner dotted box. */
 
 /* .......... default state .......... */
 
