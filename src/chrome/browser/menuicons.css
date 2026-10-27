@@ -459,7 +459,9 @@ menupopup > menu[disabled="true"] > .menu-iconic-left > .menu-iconic-icon {
 }
 
 #menu_preferences,
-#appmenu_preferences {
+#appmenu_preferences,
+#statusbar-options-fx,
+#statusbar-options-app {
   list-style-image: url("chrome://browser/skin/menu-icons/settings.svg") !important;
   -moz-image-region: auto !important;
 }
