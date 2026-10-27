@@ -300,6 +300,30 @@ label[disabled="true"]:-moz-system-metric(windows-classic) {
   text-decoration: underline;
 }
 
+/* The three bottom links read as buttons over the artwork */
+#PMaboutDialog .bottom-link {
+  color: var(--nova-text);
+  background-color: rgba(30, 30, 35, 0.85);
+  border: 1px solid var(--nova-border);
+  border-radius: var(--nova-radius-pill);
+  padding: 6px 14px;
+  margin: 0 4px;
+  text-decoration: none;
+  transition: background-color var(--nova-transition),
+              border-color var(--nova-transition);
+}
+
+#PMaboutDialog .bottom-link:hover {
+  background-color: var(--nova-surface-3);
+  border-color: var(--nova-border-strong);
+  text-decoration: none;
+}
+
+#PMaboutDialog .bottom-link:-moz-focusring {
+  border-color: var(--nova-focus);
+  box-shadow: 0 0 0 2px var(--nova-focus);
+}
+
 /* :::::: autoscroll popup ::::: */
 
 .autoscroller {
