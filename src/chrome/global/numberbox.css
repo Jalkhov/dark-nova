@@ -20,5 +20,6 @@ html|*.numberbox-input {
 
 .numberbox-input-box {
   -moz-box-align: center;
+  padding-inline-end: 4px;
 }
 
